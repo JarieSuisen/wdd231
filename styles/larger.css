@@ -1,17 +1,85 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 38rem) {
+    /* WIDE-VIEW SETTINGS */
 
-    header {}
+    * {
+        /* --- UNCOMMENT FOR BORDER VIEW --- */
+        /* border: 1px, solid, red; */
 
+
+        /* COLOR SCHEME (MAKE SURE THIS MATCHES THE BASE, small.css FILE */
+
+        --color1: #24c7cf;
+        --color2: #d57dbc;
+        --color3: #14515C;
+        --black: #000000;
+        --white: #ffffff;
+        --gray: #bbbbbb;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* -------------- HEADER--------------*/
+    header {
+        grid-template-columns: 24 auto;
+
+    }
+
+    /* -------------- HAMBURGER & NAVI -------------- */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--gray);
+
+    }
+
+    .navigation ul {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
 
 
     body {}
 
 
-
     main {}
 
+    .main-content {
+        display: grid;
+        grid-template-columns: auto auto auto;
 
+    }
+
+    .about-me {
+        grid-column: 1/3;
+    }
+
+    .photo {
+        grid-column: 3/4;
+    }
+
+    .courses {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    img {
+        padding: 10px;
+    }
 
     footer {}
+
 
 }

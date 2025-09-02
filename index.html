@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GIVE A TITLE -->
-    <title>Chamber of Commerce</title>
+    <title>Jacob's Site</title>
 
     <!-- ADD META OF "DESCRIPTION" AND "AUTHOR" -->
-    <meta name="description" content="Chamber of Commerce Page">
+    <meta name="description" content="Home Page">
     <meta name="author" content="Jacob Litster">
 
     <!-- ADD LINKS TO FONTS -->
@@ -20,30 +20,101 @@
     -->
 
     <!-- ADD LINKS TO CSS SHEETS -->
-    <link rel="stylesheet" href="styles/normalize.css"><!-- NORMALIZE CSS DOCUMENT -->
-    <!-- Alternative method, linking to an external normalize.css source:
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    -->
-    <link type="text/css" rel="stylesheet" href="styles/small.css">
-    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- NORMALIZE CSS DOCUMENT -->
+    <link type="text/css" rel="stylesheet" href="styles/small.css"> <!-- BASE LAYOUT, SMARTPHONE LAYOUT -->
+    <link type="text/css" rel="stylesheet" href="styles/larger.css"> <!-- WIDESCREEN-ADJUSTED LAYOUT -->
 
-    <!-- ADD LINKS TO JS SHEETS -->
-    <script src="scripts/scripts.js" defer></script>
+    <!-- ADD LINKS TO ALL USED JS SHEETS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="" defer></script>
+
 
 </head>
 
 <body>
 
-    <header></header>
+    <header>
+        <img src="images/house-svgrepo-com.svg" alt="Site Logo" width="16" height="16">
+        <span>Jacob's Site</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+            <li><a href="#">MYSTERY FOURTH LINK(?) AS INSTRUCTED IN THE ASSIGNMENT</a></li>
+        </ul>
+
+
+    </nav>
+
+
+    <main>
+        <h1>
+            Home
+        </h1>
+
+        <div class="main-content">
+            <div class="section-card about-me">
+                <h2>About Me</h2>
+
+                <p>
+                    I was born in 1988. Love to read, play games, spend time with family and friends. Currently single
+                    (divorced), no children (someday, I hope). I love stories and games from Japan. I am the GM of my
+                    D&D group(s). I'm autistic, high-functioning. Currently live in Salt Lake City. My mission was at
+                    Temple Square.
+                </p>
+
+            </div>
+
+            <div class="section-card photo">
+                <h2>Student Photo</h2>
+
+                <div>
+                    <img src="images/jacob-litster.webp" alt="Jacob Litster (me)" width="200" height="200">
+                </div>
+
+            </div>
+
+            <div class="section-card courses">
+                <h2>Web and Computer Programming Certificate Courses</h2>
+
+                STUFF GOES HERE
+
+            </div>
+        </div>
+    </main>
 
 
 
-    <main></main>
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.linkedin.com/in/jacoblitster/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn Link Icon" width="16" height="16"></a>
+            <a href="https://github.com/JarieSuisen" target="_blank"><img src="images/github.svg" alt="GitHub Link Icon"
+                    width="16" height="16"></a>
+            <a href="https://discord.com/users/jariesuisen" target="_blank"><img src="images/discord.svg"
+                    alt="Discord Link Icon" width="16" height="16"></a>
+
+        </div>
+
+        <p>
+            &copy;<span id="currentyear"></span> &#8226; Jacob Litster &#8226; Utah, USA
+            <br>
+            Last Modification: <span id="lastModified"></span>
+        </p>
 
 
 
 
-    <footer></footer>
+    </footer>
 
 
 
