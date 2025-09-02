@@ -1,3 +1,6 @@
+
+// ARRAY HAS BEEN UPDATED TO REFLECT MY COURSE PROGRESS
+
 const courses = [
     {
         subject: 'CSE',
@@ -9,7 +12,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +25,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,11 +37,11 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
-        number: 210,
+        number: true,
         title: 'Programming with Classes',
         credits: 2,
         certificate: 'Web and Computer Programming',
@@ -60,7 +63,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +80,8 @@ const courses = [
         completed: false
     }
 ]
+
+
+
+
+
