@@ -148,8 +148,8 @@ button {}
     /* border: solid; */
     border-radius: 10px;
     margin-bottom: 1.5rem;
-    background-color: orange;
-    color: yellow;
+    /* background-color: orange; */
+    /* color: yellow; */
 }
 
 .credits {

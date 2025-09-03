@@ -115,9 +115,6 @@ function courseDisplay(courseArray) {
         let completed = course["completed"];
 
 
-        // ADD CREDITS TO TOTAL FOR CURRENT INSTANCE
-        creditsCombined += credits;
-
         // Assign values to HTML CONTENT
         courseId.textContent = `${subject}${number}`;
         // Generate content in Object
@@ -133,11 +130,25 @@ function courseDisplay(courseArray) {
             courseId.textContent = `${subject}${number} ✓`
         };
 
+        // ADD CREDITS TO TOTAL FOR CURRENT INSTANCE - WHOOPS NEED TO USE REDUCED
+        // creditsCombined += credits;
+
         document.querySelector(".courseItems").appendChild(courseItem);
     });
 
-    // RETURN FINAL TOTAL OF CREDITS
-    creditTotal.innerHTML = creditsCombined;
+    // RETURN FINAL TOTAL OF CREDITS - WHOOPS NEED TO USE REDUCED
+    // creditTotal.innerHTML = creditsCombined;
+
+    function creditsReduce(array) {
+        const startvalue = 0;
+
+        const reducedTotal = array.reduce(
+            (i, b) => i + b.credits, startvalue
+        );
+        return reducedTotal;
+    };
+
+    creditTotal.innerHTML = creditsReduce(courseArray);
 
 }
 
