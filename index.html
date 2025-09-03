@@ -28,7 +28,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/courses.js" defer></script>
-    <script src="" defer></script>
+    <!-- <script src="" defer></script> -->
 
 
 </head>
@@ -68,6 +68,8 @@
                     Hobbies include reading, video/tabletop games, spending time with family and friends.
                     Currently single (divorced), no children (someday, I hope).
                     I love stories and games from Japan.
+                    My total library of manga, novels, anime, video games, tabletop games, etc. is bigger than a
+                    breadbox (books alone take more than 6 bookcases).
                     I am the GM of my D&D group(s).
                     I'm autistic, high-functioning.
                     Currently living in Salt Lake City.
@@ -90,7 +92,7 @@
                 <h2>Web and Computer Programming Certificate Courses</h2>
 
 
-                <div class="coursebuttons">
+                <div class="courseButtons">
                     <!-- THIS SECTION IS THE CONTROL BUTTONS -->
                     <button id="btn-all" class="coursebutton">All Courses</button>
                     <button id="btn-wdd" class="coursebutton">WDD Courses</button>
@@ -99,11 +101,15 @@
 
 
                 <!-- THIS CONTAINS A GENERATED NUMBER OF THE TOTAL CREDITS FOR THE SHOWN CLASSES -->
-                The combined credits for the courses shown below is <span id="credittotal"></span>
+                <p class="credits">
+                    The combined credits for the courses shown below is <span id="creditTotal"></span>
+                </p>
 
-                <!-- THIS SECTION IS THE GENERATED COURSE LIST -->
-                <div class="courses"></div>
-
+                <div class="courseDisplay">
+                    <!-- THIS SECTION IS THE GENERATED COURSE LIST -->
+                    <div class="courseItems"></div>
+                    <!-- The generated object(s) contain the tags <section> and <p> -->
+                </div>
             </div>
         </div>
 

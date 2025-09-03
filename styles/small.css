@@ -134,6 +134,47 @@ h2 {
     padding: 5px;
 }
 
+.courses {
+    /* display: block; */
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+.courseButtons {
+    /* height: 15px; */
+    /* display:block; */
+    margin-bottom: 1.5rem;
+    background-color: orange;
+    /* color: yellow; */
+}
+
+.credits {
+    /* display:block; */
+    margin-bottom: 1.5rem;
+}
+
+.courseDisplay {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.courseCard {
+    background-color: #24c7cf;
+    border: 1px solid #bbbbbb;
+}
+
+.completed {
+    background-color: pink;
+}
+
+.courseName {
+    /* color: orange; */
+}
+
+
 /* ------------------- FOOTER ------------------- */
 
 footer {

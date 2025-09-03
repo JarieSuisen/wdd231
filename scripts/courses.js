@@ -41,7 +41,7 @@ const courses = [
     },
     {
         subject: 'CSE',
-        number: true,
+        number: 210,
         title: 'Programming with Classes',
         credits: 2,
         certificate: 'Web and Computer Programming',
@@ -49,7 +49,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -81,7 +81,87 @@ const courses = [
     }
 ]
 
+// CODE TO DO STUFF FOLLOWS
+
+// Build the Buttons and give functionality
+// Identify targets in document
+const allButton = document.querySelector('#btn-all');
+const wddButton = document.querySelector('#btn-wdd')
+const cseButton = document.querySelector('#btn-cse')
 
 
+courseDisplay(courses);
 
+function courseDisplay(courseArray) {
+
+    // CLEAR CURRENT OBJECTS
+    document.querySelector(".courseItems").innerHTML = "";
+
+    // GRAB HTML POINT AND RESET CREDITS TO ZERO
+    const creditTotal = document.querySelector("#creditTotal");
+    let creditsCombined = 0;
+
+    // GRAB ARRAY CONTENT AND SUCH
+    courseArray.forEach(course => {
+
+        // CREATE HTML OBJECTS THAT WILL BE USED
+        let courseItem = document.createElement("section");
+        let courseId = document.createElement("p");
+
+        // Set values from array item that will be used
+        let subject = course["subject"];
+        let number = course["number"];
+        let credits = course["credits"];
+        let completed = course["completed"];
+
+
+        // ADD CREDITS TO TOTAL FOR CURRENT INSTANCE
+        creditsCombined += credits;
+
+        // Assign values to HTML CONTENT
+        courseId.textContent = `${subject}${number}`;
+        // Generate content in Object
+        courseItem.appendChild(courseId);
+
+        // Assign CLASSES to HTML objects
+        courseItem.classList.add("courseCard");
+        courseId.classList.add("courseName");
+
+        // Assign conditional details
+        if (completed == true) {
+            courseItem.classList.add("completed");
+            courseId.textContent = `${subject}${number} ✓`
+        };
+
+        document.querySelector(".courseItems").appendChild(courseItem);
+    });
+
+    // RETURN FINAL TOTAL OF CREDITS
+    creditTotal.innerHTML = creditsCombined;
+
+}
+
+
+// Button Functionality
+allButton.addEventListener('click', () => {
+    courseDisplay(courses);
+});
+
+wddButton.addEventListener('click', () => {
+
+    // Assign Filter
+    let filterList = courses.filter((i) => i["subject"] === "WDD");
+
+    //GENERATE NEW OBJECTS USING FILTERED LIST
+    courseDisplay(filterList);
+});
+
+cseButton.addEventListener('click', () => {
+
+    // Assign Filter
+    let filterList = courses.filter((i) => i["subject"] === "CSE");
+
+    //GENERATE NEW OBJECTS USING FILTERED LIST
+    courseDisplay(filterList);
+});
 
