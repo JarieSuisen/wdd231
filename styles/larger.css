@@ -79,6 +79,12 @@
         padding: 10px;
     }
 
+    .courseItems {
+
+        grid-template-columns: auto auto auto;
+    }
+
+
     footer {}
 
 
