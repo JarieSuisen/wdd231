@@ -86,6 +86,7 @@ header span {
     color: var(--color3);
     text-decoration: none;
     border-bottom: solid 1px var(--gray);
+    align-items: center;
 }
 
 .navigation li.current {
@@ -169,8 +170,14 @@ button {}
     padding: 10px;
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    gap: 1rem;
+
+}
+
+p.courseName {
+    /* align-items: center; */
 }
 
 .courseCard {
@@ -181,6 +188,9 @@ button {}
     border-radius: 15px;
     margin-bottom: 1rem;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .completed {
@@ -189,6 +199,7 @@ button {}
 
 .courseName {
     /* color: orange; */
+    margin: 0;
 }
 
 

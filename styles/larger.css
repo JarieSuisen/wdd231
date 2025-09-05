@@ -26,7 +26,7 @@
 
     /* -------------- HEADER--------------*/
     header {
-        grid-template-columns: 24 auto;
+        grid-template-columns: 24px auto;
 
     }
 
@@ -44,11 +44,41 @@
     .navigation ul {
         display: flex;
         font-size: 1rem;
+
     }
 
-    .navigation a {
-        border: none;
+    .navigation ul li {
+
+        /* align-items: center; */
     }
+
+    /* BASE VERSION
+     .navigation a {
+        border: none;
+    } */
+
+
+    .navigation a {
+        height: 2rem;
+        align-items: center;
+        border: none;
+        display: flex;
+        padding: 10px 10px;
+        /* color: var(--color3); */
+        /* text-decoration: none; */
+        /* border-bottom: solid 1px var(--gray); */
+    }
+
+
+    /* TO ADJUST THIS FROM SMALL
+    .navigation a {
+        display: block;
+        padding: .8rem 10px;
+        color: var(--color3);
+        text-decoration: none;
+        border-bottom: solid 1px var(--gray);
+    }
+    */
 
 
     body {}
@@ -80,8 +110,8 @@
     }
 
     .courseItems {
+        grid-template-columns: repeat(3, 1fr);
 
-        grid-template-columns: auto auto auto;
     }
 
 
