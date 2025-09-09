@@ -1,0 +1,23 @@
+{
+    "family-name": "Litster",
+    "date-moved-in": "10/22/2024",
+    "family-size": 3,
+    "bishopric-visited": false,
+    "family-members": [
+        {
+            "name": "Jacob",
+            "gender": "male",
+            "birthdate": "10/02/1988"
+        },
+        {
+            "name": "Jarie",
+            "gender": "female",
+            "birthdate": "10/02/1988"
+        },
+        {
+            "name": "Kasumi",
+            "gender": "female",
+            "birthdate": "09/06/2026"
+        }
+    ]
+}
