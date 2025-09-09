@@ -4,8 +4,13 @@
 
     font-family: "Noto Sans JP", sans-serif;
 
-    /* COLOR SCHEME */
+}
 
+/* ------------------------ COLOR SETTINGS ------------------------ */
+header,
+body,
+footer {
+    /* +++++ LIGHT MODE COLOR SCHEME +++++ */
     --color1: ;
     --color2: ;
     --color3: ;
@@ -16,3 +21,103 @@
 
 }
 
+/* +++++ DARKMODE COLOR SCHEME +++++ */
+body.darkmode-theme {
+    /* not necessarily inverted, though black/white are */
+    --color1: ;
+    --color2: ;
+    --color3: ;
+    --black: #ffffff;
+    --white: #000000;
+    --gray: #888888;
+
+    .darkmode,
+    .hamburger {
+        color: var(--white);
+    }
+
+
+    /* +++++ WHY DOESN"T THE SITE LOGO CHANGE COLOR AS WELL??? +++++ */
+
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+
+}
+
+
+
+/* ------------------------ END COLOR SETTINGS ------------------------ */
+
+
+/* DARKMODE BUTTON */
+.darkmode {
+    background: none;
+    border: none;
+    color: var(--black);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.darkmode::before {
+    content: "\25D1";
+    font-size: 2rem;
+}
+
+
+/* ------------------- HAMBURGER NAVI ------------------- */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+    text-align: center;
+
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: end;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--color3);
+    text-decoration: none;
+    border-bottom: solid 1px var(--gray);
+    align-items: center;
+}
+
+.navigation li.current {
+    background-color: var(--gray);
+}
+
+.navigation a:hover {
+    background-color: var(--color3);
+    color: var(--white)
+}

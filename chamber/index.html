@@ -24,12 +24,15 @@
 
     <!-- ADD LINKS TO CSS AND JS SHEETS -->
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="styles/CSSSHEET.css">
+    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
     <!-- JAVASCRIPT -->
-    <script src="scripts/JAVASCRIPTSHEET.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
 
     <!-- ADD LINK TO FAVICON -->
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/chamber/favicon.ico">
 
 
     <!-- ADD META TAGS FOR SOCIAL MEDIA -->
@@ -47,8 +50,21 @@
 
     <header>
         <!-- ICON -->
+        <img class="site-logo svg" src="images/shop-lighttheme.svg" alt="Site Logo" width="16" height="16">
+
         <!-- PAGE TITLE -->
+        <span>
+            Salt Lake City Chamber of Commerce
+        </span>
+        <!-- DARK MODE TOGGLE, needs to move to right of NAVI in Wide Mode -->
+        <button id="dark-btn" class="darkmode" name="darkmode-toggle" title="darkmode"></button>
+
         <!-- NAVIGATION -->
+
+        <!-- HAMBURGER -->
+        <button id="ham-btn" class="hamburger" name="navigation-toggle" title="hamburger-navigation menu"></button>
+
+        <!-- NAVI LIST -->
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li class="current"><a href="#">Home</a></li>
@@ -58,17 +74,16 @@
 
             </ul>
 
-            <!-- DARK MODE TOGGLE -->
-
         </nav>
-
     </header>
 
     <main>
         <!-- HERO IMAGE -->
+
         <!-- KEYNOTE TICKETS - LOCATED OVER BOTTOM-RIGHT OF HERO IMAGE -->
 
         <h1>Home</h1>
+
 
         <!-- DISPLAY CARDS WITH THE FOLLOWING SECTIONS -->
 
@@ -86,11 +101,11 @@
         <p>
             Salt Lake City Chamber of Commerce
             <br>
-            (INSERT ADDRESS LINE 1)
+            201 S Main St
             <br>
-            (INSERT ADDRESS LINE 2)
+            Salt Lake City, Utah 84111
             <br>
-            (INSERT E-MAIL ADDRESS)
+            info@slc-cc.org
             <br>
             (1+801-555-1597)
         </p>

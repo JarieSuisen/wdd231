@@ -1,0 +1,64 @@
+@media only screen and (min-width: 38rem) {
+    /* WIDE-VIEW SETTINGS */
+
+    * {
+        /* --- UNCOMMENT FOR BORDER VIEW --- */
+        /* border: 1px, solid, red; */
+
+        /* NOTE: COLOR THEME FROM small.css IS AVAILABLE TO HERE, SO DO NOT DUPLICATE COLOR THEME! */
+    }
+
+
+    /* HEADER */
+    header {
+        display: flex;
+        border-bottom: solid 1px var(--gray);
+    }
+
+    /* -------------- HAMBURGER & NAVI -------------- */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        
+    }
+
+    .navigation ul {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .navigation a {
+        height: 2rem;
+        align-items: center;
+        border: none;
+        display: flex;
+        padding: 10px 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
