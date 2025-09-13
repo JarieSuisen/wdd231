@@ -23,6 +23,7 @@
     <link type="text/css" rel="stylesheet" href="styles/small.css">
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
     <link type="text/css" rel="stylesheet" href="styles/directory.css">
+    <link type="text/css" rel="stylesheet" href="styles/directory-larger.css">
     <!-- JAVASCRIPT -->
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
@@ -103,14 +104,14 @@
         <!-- INSERT VIEW OPTION CONTROL - GRID or LIST -->
 
         <div class="display-switch">
-            <button class="btn-grid" id="grid">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-grid" viewBox="0 0 16 16">
+            <button class="btn-grid" id="btn-grid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid"
+                    viewBox="0 0 16 16">
                     <path
                         d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
                 </svg>
             </button>
-            <button class="btn-list" id="list">
+            <button class="btn-list" id="btn-list">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -120,7 +121,7 @@
         </div>
 
         <!-- GENERATE THE CARDS/LIST BELOW VIA JAVASCRIPT -->
-        <div id="cards"></div>
+        <div id="cards" class="directory-cards"></div>
 
 
 

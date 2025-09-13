@@ -7,7 +7,7 @@ async function getProphetData() {
 
     const data = await response.json();
 
-    // console.table(data.prophets);  // Temp., for testing retrieving and reading the JSON correctly
+    console.table(data);  // Temp., for testing retrieving and reading the JSON correctly
 
     displayProphets(data.prophets); // This calls for just the needed data, not the entire object. Saves time later.
 
