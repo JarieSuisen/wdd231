@@ -18,7 +18,7 @@ getProphetData();
 
 const displayProphets = (prophets) => {
 
-    prophets.forEach((prophet) => {
+    prophets.forEach(prophet => {
 
         // create page elements
         const card = document.createElement('section');

@@ -1,0 +1,28 @@
+.display-switch {
+    /* display: flex; */
+    /* text-align: center; */
+}
+
+.btn-grid,
+.btn-list {
+    width: 44px;
+    height: 44px;
+}
+
+.bi-grid,
+.bi-list {
+    width: 33px;
+    height: 33px;
+
+}
+
+/* .btn-grid::before {
+        content: "\130d1";
+        font-size: 2rem;
+    } */
+
+
+/* .btn-list::before {
+        content: "\2630";
+        font-size: 2rem;
+} */
