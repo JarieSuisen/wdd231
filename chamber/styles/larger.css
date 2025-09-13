@@ -8,11 +8,38 @@
         /* NOTE: COLOR THEME FROM small.css IS AVAILABLE TO HERE, SO DO NOT DUPLICATE COLOR THEME! */
     }
 
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
     /* HEADER */
     header {
-        display: flex;
+
+        flex-wrap: nowrap;
         border-bottom: solid 1px var(--gray);
+
+                /* gap: 1rem; */
+
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+    }
+
+    .title {
+        margin-right: auto;
+        /* 
+        margin-right: 2rem;
+        margin-left: 2rem; */
+
+    }
+
+    .darkmode {
+        order: 5;
+        /* SET TO POSITION IN THE FLEX ORDER - COOL STUFF */
+
+        display: flex;
+        align-items: center;
     }
 
     /* -------------- HAMBURGER & NAVI -------------- */
@@ -21,8 +48,17 @@
     }
 
     .navigation {
-        display: block;
+        display: flex;
+        order: 0;
         
+        margin-left: auto;
+        width: auto;
+
+        /* display: flex; */
+        align-items: center;
+        /* margin-right: 0; */
+
+
     }
 
     .navigation ul {
@@ -39,9 +75,25 @@
     }
 
 
+    h1 {
+        text-align: left;
+
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
 
 
-
+    footer div {
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
 
 

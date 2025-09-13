@@ -1,17 +1,65 @@
 {
-    "1": {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "url": "",
+    "Company 1": {
+        "name": "Silph Company",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
         "image or icon file names": "",
         "membership level": "(1=member, 2=silver, 3=gold)",
         "other information you deem appropriate": ""
     },
-    "2": [],
-    "3": [],
-    "4": [],
-    "5": [],
-    "6": [],
-    "7": []
+    "Company 2": {
+        "name": "",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
+        "image or icon file names": "",
+        "membership level": "(1=member, 2=silver, 3=gold)",
+        "other information you deem appropriate": ""
+    },
+    "Company 3": {
+        "name": "",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
+        "image or icon file names": "",
+        "membership level": "(1=member, 2=silver, 3=gold)",
+        "other information you deem appropriate": ""
+    },
+    "Company 4": {
+        "name": "",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
+        "image or icon file names": "",
+        "membership level": "(1=member, 2=silver, 3=gold)",
+        "other information you deem appropriate": ""
+    },
+    "Company 5": {
+        "name": "",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
+        "image or icon file names": "",
+        "membership level": "(1=member, 2=silver, 3=gold)",
+        "other information you deem appropriate": ""
+    },
+    "Company 6": {
+        "name": "",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
+        "image or icon file names": "",
+        "membership level": "(1=member, 2=silver, 3=gold)",
+        "other information you deem appropriate": ""
+    },
+    "Company 7": {
+        "name": "",
+        "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
+        "phone": "+1-555-435-XXXX",
+        "url": "https://www.?.com",
+        "image or icon file names": "",
+        "membership level": "(1=member, 2=silver, 3=gold)",
+        "other information you deem appropriate": ""
+    }
 }
