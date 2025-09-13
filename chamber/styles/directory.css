@@ -53,16 +53,20 @@
     /* display: block; */
     justify-content: center;
     align-content: center;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .list-card {
-    background-color: pink;
+    background-color: ;
     border: 1px black solid;
-    display: flex;
+    padding: 3px;
+    /* display: flex;  */
+    margin-bottom: .5rem;
 }
 
 .list-card section {
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 
