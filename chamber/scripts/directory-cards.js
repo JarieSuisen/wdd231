@@ -1,5 +1,5 @@
 // CURRENTLY SETTING TO A FIXED DESTINATION RATHER THAN RELATIVE BECAUSE I"M TIRED
-const source = 'wdd231/chamber/data/members.json';
+const source = './data/members.json';
 
 const cards = document.querySelector('#cards');
 
