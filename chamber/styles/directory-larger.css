@@ -10,9 +10,14 @@
 
 
 
+    .grid {}
+
+    .grid-card {
+        width: 10rem;
+    }
 
 
-
+    .list {}
 
     .list-card {
         display: flex;
