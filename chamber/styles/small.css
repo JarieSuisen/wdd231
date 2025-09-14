@@ -5,6 +5,7 @@
 }
 
 :root {
+
     /* +++++ LIGHT MODE COLOR SCHEME +++++ */
     --color1: ;
     --color2: ;
@@ -14,6 +15,9 @@
 
     --gray: #bbbbbb;
     /* +++++ END LIGHT MODE COLOR SCHEME +++++ */
+
+    /* === NOTE: DARK MODE COLOR SCHEME IS AT VERY END OF DOCUMENT === */
+
 }
 
 /* ------------------------ COLOR SETTINGS ------------------------ */
