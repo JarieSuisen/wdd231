@@ -5,7 +5,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         },
@@ -14,7 +14,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         },
@@ -23,7 +23,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         },
@@ -32,7 +32,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         },
@@ -41,7 +41,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         },
@@ -50,7 +50,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         },
@@ -59,7 +59,7 @@
             "address": "X N/S Y E/W, Salt Lake City, Utah, 840103",
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
-            "logo": "images/test.webp",
+            "logo": "./images/test.webp",
             "membership level": "(1=member, 2=silver, 3=gold)",
             "other information you deem appropriate": ""
         }
