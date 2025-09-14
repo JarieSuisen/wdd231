@@ -1,4 +1,4 @@
-const source = 'data/members.json';
+const source = '../data/members.json';
 
 const cards = document.querySelector('#cards');
 
