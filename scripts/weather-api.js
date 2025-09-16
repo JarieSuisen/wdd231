@@ -79,7 +79,12 @@ async function displayResults() {
 
     const icon = data.weather[0].icon;
 
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    if (units === 'imperial') {
+        currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    }
+    else {
+        currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    };
 
     const iconsrc = `https://openweathermap.org/img/wn/${icon}.png`;
     // console.log(iconsrc); // console print of the icon's weblink
