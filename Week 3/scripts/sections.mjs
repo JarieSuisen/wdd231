@@ -20,8 +20,8 @@ function setSectionSelection(sections) {
     const sectionSelect = document.querySelector("#sectionNumber");
 
 
-    // // replace the following so it refences 'sections' correctly:
-    // // byuiCourse.sections.forEach((section) => {
+    // // remove "byuiCourse" so it refences 'sections' correctly:
+    
     sections.forEach((section) => {
 
 
