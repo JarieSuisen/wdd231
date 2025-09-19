@@ -26,6 +26,8 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <!-- ADD LINK TO FAVICON -->
     <link rel="icon" href="favicon.ico">
     <!-- ADD META TAGS FOR SOCIAL MEDIA -->
@@ -87,9 +89,64 @@
 
         <!-- DISPLAY CARDS WITH THE FOLLOWING SECTIONS -->
 
+        <!-- +++++++ CALL TO ACTION +++++++ -->
         <!-- Events -->
+
+        <!-- +++++++ WEATHER +++++++ -->
         <!-- Current Weather -->
+        <!--
+        Section1:
+        the current weather: details:
+            -Icon
+            -Temperature
+            -Description
+            -High
+            -Low
+            -Humidity
+            -Sunrise Time
+            -Sunset Time
+-->
+        <div class="card-weather" id="weather-today">
+
+            <img id="weather-icon" src="" alt="">
+
+            <div>
+                <span id="details"></span>
+                <!--
+                <span id="temperature-today"></span>
+                <span id="description"></span>
+                <span id="high"></span>
+                <span id="low"></span>
+                <span id="humidity"></span>
+                <span id="sunrise"></span>
+                <span id="sunset"></span> -->
+
+                <!-- <figcaption></figcaption> -->
+                <!-- <figure>
+                </figure> -->
+            </div>
+
+        </div>
+
+
+
+        <!--  
+        Secton 2: Forecast
+            "Today: {TEMP}"
+            "{Tomorrow day}: {TEMP}"
+            "{NEXT DAY}: {TEMP}"
+-->
+        <div class="card-weather" id="weather-forecast">
+            <span id="forecast"></span>
+
+        </div>
+
+
+
+
         <!-- Weather Forecast -->
+
+        <!-- +++++++ SPOTLIGHTS +++++++ -->
         <!-- Business Card 1 -->
         <!-- Business Card 2 -->
         <!-- Business Card 3 -->

@@ -32,6 +32,8 @@ lon=${lon}
 appid=${apikey}
 &
 units=${units}
+&
+cnt=3
 `;
 
 
@@ -44,7 +46,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = response.json();
 
-            // console.log(data);
+            console.log(data);
 
             return data;
         }
@@ -75,7 +77,7 @@ async function displayResults() {
 
     const data = await apiFetch();
 
-    // console.table(data); // console print of the JSON table
+    console.table(data); // console print of the JSON table
 
     const icon = data.weather[0].icon;
 
