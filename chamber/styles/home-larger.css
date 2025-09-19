@@ -1,0 +1,29 @@
+@media only screen and (min-width: 38rem) {
+
+    .cards {
+        /* color: blue; */
+        display: flex;
+    }
+
+    .card-weather {
+
+        display: flex;
+        /* text-align: left; */
+
+        /* background-color: blue; */
+    }
+
+
+
+    #weather-today {
+        /* display: flex; */
+    }
+
+
+
+    .weatherCard {
+        /* color: orange; */
+    }
+
+
+}

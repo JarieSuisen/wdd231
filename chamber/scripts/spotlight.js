@@ -3,3 +3,6 @@
 //      member must be gold or silver members
 //      RANDOMLY load 'spotlights' each time the page is rendered
 //      display their company name, logo, phone, address, website, and membership level.
+
+
+

@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- ADD LINKS TO CSS AND JS SHEETS -->
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="styles/small.css">
+    <link type="text/css" rel="stylesheet" href="./styles/small.css">
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link type="text/css" rel="stylesheet" href="styles/home.css">
+    <link type="text/css" rel="stylesheet" href="styles/home-larger.css">
     <!-- JAVASCRIPT -->
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
@@ -82,19 +84,19 @@
     <main>
         <!-- HERO IMAGE -->
 
-        <!-- KEYNOTE TICKETS - LOCATED OVER BOTTOM-RIGHT OF HERO IMAGE -->
+        <!-- KEYNOTE TICKETS ??? MAYBE NOT USED - LOCATED OVER BOTTOM-RIGHT OF HERO IMAGE -->
 
         <h1>Home</h1>
 
+        <div class="cards">
+            <!-- DISPLAY CARDS WITH THE FOLLOWING SECTIONS -->
 
-        <!-- DISPLAY CARDS WITH THE FOLLOWING SECTIONS -->
+            <!-- +++++++ CALL TO ACTION +++++++ -->
+            <!-- Events -->
 
-        <!-- +++++++ CALL TO ACTION +++++++ -->
-        <!-- Events -->
-
-        <!-- +++++++ WEATHER +++++++ -->
-        <!-- Current Weather -->
-        <!--
+            <!-- +++++++ WEATHER +++++++ -->
+            <!-- Current Weather -->
+            <!--
         Section1:
         the current weather: details:
             -Icon
@@ -106,13 +108,13 @@
             -Sunrise Time
             -Sunset Time
 -->
-        <div class="card-weather" id="weather-today">
+            <div class="card-weather" id="weather-today">
 
-            <img id="weather-icon" src="" alt="">
+                <img id="weather-icon" src="" alt="">
 
-            <div>
-                <span id="details"></span>
-                <!--
+                <div>
+                    <span id="details"></span>
+                    <!--
                 <span id="temperature-today"></span>
                 <span id="description"></span>
                 <span id="high"></span>
@@ -121,35 +123,39 @@
                 <span id="sunrise"></span>
                 <span id="sunset"></span> -->
 
-                <!-- <figcaption></figcaption> -->
-                <!-- <figure>
+                    <!-- <figcaption></figcaption> -->
+                    <!-- <figure>
                 </figure> -->
+                </div>
+
             </div>
 
-        </div>
 
 
-
-        <!--  
+            <!--  
         Secton 2: Forecast
             "Today: {TEMP}"
             "{Tomorrow day}: {TEMP}"
             "{NEXT DAY}: {TEMP}"
 -->
-        <div class="card-weather" id="weather-forecast">
-            <span id="forecast"></span>
+            <div class="card-weather" id="weather-forecast">
+                <span id="forecast"></span>
+
+            </div>
+
+
+
+
+            <!-- Weather Forecast -->
+
+            <!-- +++++++ SPOTLIGHTS +++++++ -->
+            <!-- Business Card 1 -->
+            <!-- Business Card 2 -->
+            <!-- Business Card 3 -->
+
 
         </div>
 
-
-
-
-        <!-- Weather Forecast -->
-
-        <!-- +++++++ SPOTLIGHTS +++++++ -->
-        <!-- Business Card 1 -->
-        <!-- Business Card 2 -->
-        <!-- Business Card 3 -->
 
     </main>
 
