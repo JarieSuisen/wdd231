@@ -176,13 +176,26 @@ function displayCompanies(companies, view) {
         // --- --- ASSIGN VARIABLES
         companyUrl.setAttribute('href', href);
 
+        // ++++++++ SOLUTIONS TO PREVENT FOLLOWING FALSE LINKS +++++++++++
+        // companyUrl.setAttribute('href', '#'); // THIS OVERRIDES THE LINK SO IT DOES NOT GO TO THE FAKE SITE LISTED
+        companyUrl.setAttribute('onclick', 'return false') // THIS IS TO PREVENT THE LINKS TO FALSE SITES FROM OPERATING.
+        // ++++++++ END SOLUTIONS +++++++++++
 
 
-        // +++ NON-IMAGES
+
+        function cleanUrl(url) {
+            return url.replace(/^https?:\/\/(www\.)?/, "");
+        }
+
+        const urlcleanup = cleanUrl(url);
+        companyUrl.textContent = urlcleanup;
+
+
+        // --- NON-IMAGES
         companyName.textContent = name;
         companyAddress.textContent = address;
         companyPhone.textContent = phone;
-        companyUrl.textContent = url;
+        // companyUrl.textContent = url;
         companyMembership.textContent = membership;
 
 

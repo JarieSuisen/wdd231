@@ -126,7 +126,19 @@ function displayCompanies(companies, view) {
         companyName.textContent = name;
         companyAddress.textContent = address;
         companyPhone.textContent = phone;
-        companyUrl.textContent = url;
+
+        function cleanUrl(url) {
+            return url.replace(/^https?:\/\/(www\.)?/, "");
+        }
+
+        const urlcleanup = cleanUrl(url);
+        companyUrl.textContent = urlcleanup;
+
+        // ++++++++ SOLUTIONS TO PREVENT FOLLOWING FALSE LINKS +++++++++++
+        // companyUrl.setAttribute('href', '#'); // THIS OVERRIDES THE LINK SO IT DOES NOT GO TO THE FAKE SITE LISTED
+        companyUrl.setAttribute('onclick', 'return false') // THIS IS TO PREVENT THE LINKS TO FALSE SITES FROM OPERATING.
+        // ++++++++ END SOLUTIONS +++++++++++
+
 
 
         // BASED ON GRID OR LIST, DO ONE OF THE FOLLOWING
