@@ -13,27 +13,88 @@ const cards = document.querySelector('#spotlight');
 
 
 // SCREENWIDTH CALL ----------------------------------------
-let screenWidth = 0; // current width of the screen
+// let screenWidth = 0; // current width of the screen
 
 function resizeValue() {
 
     const wideView = window.innerWidth >= 608; // Any value of this or greater is considered "wide"
 
+    let screenView = '';
     if (wideView) {
-        getCompanyData('wide');
+        screenView = 'wide';
     }
     else {
-        getCompanyData();
+        screenView = 'narrow';
     }
+    return screenView;
 };
-resizeValue();
-window.addEventListener('resize', resizeValue);
-
-// SCREENWIDTH CALL ----------------------------------------
 
 
 
-async function getCompanyData(view) {
+screenWidth();
+window.addEventListener('resize', screenWidth);
+
+// SCREENWIDTH CALL END ----------------------------------------
+
+//-----------------++++++++++++++++++++++++++
+
+
+// ARGH. NOT SURE WHY IT IS NOT HIDING THE THIRD ITEM
+
+function screenWidth() {
+
+    // let cardCount = 2;
+    const spotlightCards = document.querySelectorAll('.spotlight-card');
+
+    if (spotlightCards.length > 0) {
+        if (resizeValue() === 'wide') {
+            spotlightCards[2].style.display = 'block';
+        }
+        else {
+            spotlightCards[2].style.display = 'hide';
+        };
+    };
+
+};
+
+
+
+function filterItems(list) {
+    if (!list.companies) return [];
+
+    const filteredList = list.companies.filter(company =>
+        company.membership > 1
+    );
+
+    // console.log('FILTERED LIST');
+    // console.table(filteredList);
+
+    return filteredList;
+
+    // return filteredList;
+
+    // console.log('FILTERED LIST');
+    // console.table(filteredList); // VERIFY THE FILTER TABLE WORKS
+};
+
+
+function randomizeItems(list) {
+    if (!list || list.length === 0) return [];
+
+    // const count = screenWidth;
+    let randomList = list.sort(() => Math.random() - 0.5).slice(0, 3);
+    // console.log('RANDOM LIST');
+    // console.table(list); // VERIFY THE RANDOM TABLE WORKS
+    return randomList;
+};
+
+
+
+//-----------------++++++++++++++++++++++++++
+
+let companyData = [];
+
+async function getCompanyData() {
 
     cards.innerHTML = ''; // CLEARS THE SECTION FOR THE NEW CONTENT
 
@@ -41,74 +102,30 @@ async function getCompanyData(view) {
     const data = await response.json();
     // console.table(data['companies']); // COMMENT ME - SHOWS IN BROWSER CONSOLE IF ARRAY IS READ CORRECTLY.
 
-    displayCompanies(data['companies'], view);
+    const dataFiltered = filterItems(data);
+    const dataRandom = randomizeItems(dataFiltered);
+
+    displayCompanies(dataRandom);
 
 
-    // if (view === 'grid') {
-    //     // console.log('LOADING GRID'); // COMMENT ME - SHOWS IN CONSOLE IF THIS IS BEING CALLED
-    //     displayCompanies(data['companies'], view);
-    //     // console.table(data['companies']) // COMMENT ME - SHOWS TABLE IN CONSOLE
-    // }
-    // else if (view === 'list') {
-    //     // console.log('LOADING LIST'); // COMMENT ME - SHOWS IN CONSOLE IF THIS IS BEING CALLED
-    //     displayCompanies(data['companies'], view);
-    //     // console.table(data['companies']) // COMMENT ME - SHOWS TABLE IN CONSOLE
-    // };
 
-    // displayCompanies(jsonArray); // THIS CALLS THE OPERATION THAT WILL DISPLAY THE INFORMATION.
 };
+getCompanyData();
 
-// getCompanyData(); // TRIGGERS THE LAYOUT indicated as default
-
-// // GRID MODE
-// function displayCompaniesGrid(companies) {
-//     companies.forEach(company => {
-//         const card = buildCompanyData(company);
-
-//         // BUILD DATA CARD HERE
-
-//         // BUILD ELEMENT TREE BY ASSIGNING FROM LOWEST TO HIGHEST, IN ORDER DESIRED FOR DISPLAY
-
-//         // --- CARD LAYOUT
-//         // LOGO, ADDRESS< PHONE< URL
-//         card.appendChild(companyLogo);
-//         card.appendChild(companyAddress);
-//         card.appendChild(companyPhone);
-//         card.appendChild(companyUrl);
-
-
-//         // ASSIGN CARD ELEMENT TO THE CARDS ITEM FOR DISPLAY
-//         cards.appendChild(card);
-
-
-
-//     });
-
-// };
-
-
-
-// // LIST MODE
-// function displayCompaniesList(companies) {
-//     companies.forEach(company => {
-//         buildCompanyData(company);
-
-//         // BUILD DATA LIST HERE
-
-
-//     });
-
-// };
 
 
 function displayCompanies(companies, view) {
 
-    cards.className = view; // adds the class of either 'grid' or 'list' for CSS Styling to entire group of cards.
+    // console.table(companies);
+
+    // cards.className = `${view}-view`; // adds the class of either 'grid' or 'list' for CSS Styling to entire group of cards.
+
 
     companies.forEach(company => {
         // CREATE PAGE ELEMENTS
         const card = document.createElement('section');
-        card.classList.add(`spotlight-card`); // // adds the class of either 'grid-card' or 'list-card' for CSS Styling to individual card.
+        card.classList.add(`spotlight-card`); // // adds the "spotlight-card" class CSS Styling to individual card.
+        card.classList.add(`card`); // // adds the "spotlight-card" class CSS Styling to individual card.
 
         const companyName = document.createElement('h3');
         const companyAddress = document.createElement('p');
@@ -126,9 +143,16 @@ function displayCompanies(companies, view) {
         const phone = company['phone'];
         const url = company['url'];
         const src = company['logo']; // this is set as the 'src' attribute to call the image
-        const membership = company['membership']; // ------ THIS IS NOT EVEN USED???
+        const membershipRating = company['membership']; // ------ THIS IS NOT EVEN USED???
         // const other = company['other']; // ------ THIS IS NOT EVEN USED???
+        let membership = '';
 
+        if (membershipRating === 3) {
+            membership = 'Gold Member'
+        }
+        else {
+            membership = 'Silver Member'
+        }
         // TEST READING DATA CORRECTLY
         // console.log(`name: ${name}`) // COMMENT ME - SHOWS THAT ITEM IS BEING READ CORRECTLY
 
@@ -138,8 +162,8 @@ function displayCompanies(companies, view) {
         // --- VARIABLES FOR IMAGE
         const alt = `Logo for ${name}.`;
         const loading = 'lazy';
-        const width = 100; // --------- CAN BE ADJUSTED AS DESIRED
-        const height = 100; // --------- CAN BE ADJUSTED AS DESIRED
+        const width = 75; // --------- CAN BE ADJUSTED AS DESIRED
+        const height = 75; // --------- CAN BE ADJUSTED AS DESIRED
         // --- --- ASSIGN VARIABLES
         companyLogo.setAttribute('src', src);
         companyLogo.setAttribute('alt', alt);
@@ -179,24 +203,3 @@ function displayCompanies(companies, view) {
     })
 
 };
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    // START BUTTON RULES ---------
-    const gridButton = document.querySelector('#btn-grid');
-    const listButton = document.querySelector('#btn-list');
-
-    gridButton.addEventListener('click', () => {
-        // console.log('CLICK - Grid Button'); // COMMENT ME - SHOWS IN CONSOLE IF THIS IS BEING CALLED
-        getCompanyData('grid');
-
-    });
-    listButton.addEventListener('click', () => {
-        // console.log('CLICK - List Button'); // COMMENT ME - SHOWS IN CONSOLE IF THIS IS BEING CALLED
-        getCompanyData('list');
-
-    });
-
-
-    // END BUTTON RULES ---------
-});

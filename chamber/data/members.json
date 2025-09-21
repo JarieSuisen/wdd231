@@ -6,7 +6,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 3,
             "other information you deem appropriate": ""
         },
         {
@@ -15,7 +15,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 2,
             "other information you deem appropriate": ""
         },
         {
@@ -24,7 +24,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 3,
             "other information you deem appropriate": ""
         },
         {
@@ -33,7 +33,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 1,
             "other information you deem appropriate": ""
         },
         {
@@ -42,7 +42,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 2,
             "other information you deem appropriate": ""
         },
         {
@@ -51,7 +51,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 1,
             "other information you deem appropriate": ""
         },
         {
@@ -60,7 +60,7 @@
             "phone": "+1-555-435-XXXX",
             "url": "https://www.?.com",
             "logo": "./images/test.webp",
-            "membership level": "(1=member, 2=silver, 3=gold)",
+            "membership": 3,
             "other information you deem appropriate": ""
         }
     ]

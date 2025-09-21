@@ -10,13 +10,18 @@
     }
 
     .card {
-        background-color: yellowgreen;
-        min-width: fit-content;
+        /* background-color: yellowgreen; */
+        /* min-width: fit-content; */
         /* max-width: 200px; */
 
-        padding: 10px;
-        margin: 5px;
+        /* padding: 10px; */
+        /* margin: 5px; */
     }
+
+h2 {
+    /* width: 100%; */
+    
+}
 
     .current-events {
         /* color: pink; */
@@ -25,7 +30,7 @@
 
     .card-weather {
 
-        display: flex;
+        /* display: flex; */
         /* text-align: left; */
 
         /* background-color: blue; */
@@ -43,7 +48,13 @@
         /* color: orange; */
     }
 
+    #spotlight {
+        display: flex;
+    }
 
-
+    .spotlight-card {
+        width: fit-content;
+        padding: 10px;
+    }
 
 }

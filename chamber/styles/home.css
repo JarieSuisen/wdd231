@@ -1,5 +1,14 @@
 * {
-    border: solid 1px red;
+    /* border: solid 1px red; */
+}
+
+.img-wrapper {
+    margin: 0 auto;
+
+}
+
+.img-wrapper img {
+    width: 100%;
 }
 
 h2 {
@@ -9,7 +18,7 @@ h2 {
 }
 
 .cards {
-    background-color: teal;
+    /* background-color: teal; */
     /* color: blue; */
 
     /* display: flex; */
@@ -18,13 +27,12 @@ h2 {
     padding: 10px;
     margin: 10px;
 }
-.cards-upper {
 
-}
+.cards-upper {}
 
 
 .card {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     /* display: inline-block; */
     /* text-align: center; */
     /* margin: 0 auto; */
@@ -32,10 +40,42 @@ h2 {
     /* justify-content: center; */
     /* grid-template-columns: ; */
 
+    border: 1px solid var(--black);
+    margin: 5px;
+
 }
 
 .weather-details {
     display: flex;
+    /* text-align: center; */
+    margin: 0 auto;
+
+}
+
+.weather-details img {
+    /* NOT SURE ABOUT THE COLOR CHOICE HERE */
+    background-color: var(--gray);
+
+    /* border: 1px; */
+    border-radius: 50px;
+
+
+}
+
+.weather-details span {
+    /* align-self: center; */
+    text-align: left;
+    margin: 0 auto;
+}
+
+section.weatherCard {
+    /* WHY DOESN"T THIS EXTEND BEYOND THE TEXT WIDTH??? */
+
+    /* background-color: pink; */
+
+    margin: 0 auto;
+
+
 }
 
 span {
@@ -70,12 +110,17 @@ section {
 
 
 
-.weatherCard {
-    /* color: orange; */
-}
 
 
 .spotlight-card {
     /* color: lightgreen; */
 }
 
+.spotlight-card h3 {
+    /* margin-top: 2; */
+}
+
+.spotlight-card img {
+    display: block;
+    margin: 1rem auto;
+}
