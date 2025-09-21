@@ -1,8 +1,26 @@
 @media only screen and (min-width: 38rem) {
 
-    .cards {
+
+
+    .cards-upper {
         /* color: blue; */
         display: flex;
+        /* flex-wrap:wrap; */
+
+    }
+
+    .card {
+        background-color: yellowgreen;
+        min-width: fit-content;
+        /* max-width: 200px; */
+
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .current-events {
+        /* color: pink; */
+        width: 500px;
     }
 
     .card-weather {
@@ -24,6 +42,8 @@
     .weatherCard {
         /* color: orange; */
     }
+
+
 
 
 }

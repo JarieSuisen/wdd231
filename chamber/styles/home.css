@@ -1,25 +1,81 @@
+* {
+    border: solid 1px red;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .cards {
+    background-color: teal;
     /* color: blue; */
+
     /* display: flex; */
+    /* text-align: center; */
+
+    padding: 10px;
+    margin: 10px;
+}
+.cards-upper {
+
+}
+
+
+.card {
+    background-color: lightblue;
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
+
+    /* justify-content: center; */
+    /* grid-template-columns: ; */
+
+}
+
+.weather-details {
+    display: flex;
+}
+
+span {
+    /* text-align: center; */
+}
+
+section {
+
+    /* text-align: center; */
 }
 
 .card-weather {
 
     /* display: flex; */
-    text-align: left;
+    /* text-align: left; */
 
     /* background-color: blue; */
 }
 
+#weather-icon {
 
+    /* background-color: grey; */
+    width: 5rem;
+    height: 5rem;
+    /* display: flex; */
+}
 
 
 #weather-today {
     /* display: flex; */
 }
 
-;
+
 
 .weatherCard {
     /* color: orange; */
 }
+
+
+.spotlight-card {
+    /* color: lightgreen; */
+}
+

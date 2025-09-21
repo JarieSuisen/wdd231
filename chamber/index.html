@@ -86,13 +86,24 @@
 
         <!-- KEYNOTE TICKETS ??? MAYBE NOT USED - LOCATED OVER BOTTOM-RIGHT OF HERO IMAGE -->
 
+        <!-- +++++++ CALL TO ACTION +++++++ -->
+        <!-- AKA: JOIN US -->
+
         <h1>Home</h1>
 
-        <div class="cards">
-            <!-- DISPLAY CARDS WITH THE FOLLOWING SECTIONS -->
+        <div class="cards-upper cards">
+            <div class="card current-events">
+                <h2>Current Events</h2>
+                <!-- CURRENT Events ... What? What should go here? -->
+                <p >
+                    (STUFF GOES HERE I GUESS)(STUFF GOES HERE I GUESS)(STUFF GOES HERE I GUESS)(STUFF GOES HERE I GUESS)
+                </p>
 
-            <!-- +++++++ CALL TO ACTION +++++++ -->
-            <!-- Events -->
+
+            </div>
+
+            <!-- <div class="cards-weather cards"> -->
+            <!-- DISPLAY CARDS WITH THE FOLLOWING SECTIONS -->
 
             <!-- +++++++ WEATHER +++++++ -->
             <!-- Current Weather -->
@@ -108,11 +119,13 @@
             -Sunrise Time
             -Sunset Time
 -->
-            <div class="card-weather" id="weather-today">
+            <div class="card-weather card" id="weather-today">
 
-                <img id="weather-icon" src="" alt="">
+                <h2>Today's Weather</h2>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="">
 
-                <div>
+
                     <span id="details"></span>
                     <!--
                 <span id="temperature-today"></span>
@@ -132,26 +145,38 @@
 
 
 
-            <!--  
-        Secton 2: Forecast
-            "Today: {TEMP}"
-            "{Tomorrow day}: {TEMP}"
-            "{NEXT DAY}: {TEMP}"
--->
-            <div class="card-weather" id="weather-forecast">
-                <span id="forecast"></span>
 
+            <div class="card-weather card" id="weather-forecast">
+
+                <h2>3-day Forecast</h2>
+                <!-- Weather Forecast -->
+                <div class="weather-details">
+                    <!--  
+                Secton 2: Forecast
+                "Today: {TEMP}"
+                "{Tomorrow day}: {TEMP}"
+                "{NEXT DAY}: {TEMP}"
+                -->
+                    <span id="forecast"></span>
+                </div>
             </div>
 
 
 
 
-            <!-- Weather Forecast -->
 
+        </div>
+        <!-- </div> -->
+        <div class="cards-spotlight cards">
+            <h2>Spotlights</h2>
             <!-- +++++++ SPOTLIGHTS +++++++ -->
             <!-- Business Card 1 -->
             <!-- Business Card 2 -->
             <!-- Business Card 3 -->
+
+            <span id="spotlight"></span>
+
+        </div>
 
 
         </div>
