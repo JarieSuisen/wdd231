@@ -160,6 +160,7 @@ header {
 
 footer {
     padding-left: 1rem;
+    border-top: solid black 1px;
 }
 
 footer div {

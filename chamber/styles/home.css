@@ -4,11 +4,45 @@
 
 .img-wrapper {
     margin: 0 auto;
-
+    margin-bottom: 0px;
+    /* position: fixed; */
 }
 
 .img-wrapper img {
     width: 100%;
+    height: 100%
+        /* position: fixed; */
+
+}
+
+.action {
+    position: relative;
+    justify-self: right;
+    max-width: fit-content;
+    border: 1px solid black;
+    color: black;
+    background-color: var(--gray);
+    /* color: green; */
+    margin-right: 5px;
+    padding: 5px;
+    z-index: 2;
+
+    margin-top: -58px;
+}
+
+.action:hover {
+    background: var(--white);
+
+}
+
+.action-button {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.action-button:hover {
+    text-decoration: underline;
+
 }
 
 h2 {
