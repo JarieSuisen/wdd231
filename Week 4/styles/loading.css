@@ -1,0 +1,201 @@
+/* FIRST activity - works fine as instructed */
+#loader {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    /* Following changes between activities */
+    animation: spin 1.5s linear infinite;
+}
+
+#loader::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Following changes between activities */
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* ANIMATION KEYFRAMES - NOT USED FOR SECOND ACTIVITY */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+}
+
+
+/* SECOND Activity - if you follow the instructions, it does not work */
+
+.loader-t {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+
+    /* REPLACE animation WITH transition */
+    /* Ok... but that isn't enough. It's broken like this. */
+    transition: spin 1.5s linear infinite;
+}
+
+.loader-t::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* REPLACE animation WITH transition */
+    /* ALSO, ADD scale(0) TO transform TO CHANGE INITIAL SIZE - NOT WELL EXPLAINED */
+    /* ALSO ALSO, ADD font-size??? Ok, but that was not mentioned either. You won't know if you aren't checking the example code. */
+    transform: translate(-50%, -50%) scale(0);
+    transition: pulse 1.5s ease-in-out infinite;
+    /* font-size: 2rem; */
+}
+
+.loader-t:hover {
+    transform: rotate(360deg);
+}
+
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+/* SECOND ACTIVITY - CORRECTED VERSION +++++++++++++++++++++++ */
+.loader-t {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+
+    /* ALSO NEED: */
+    /* REPLACE spin WITH transform, SO IT CALLS THAT OPERATION ON HOVER */
+    /*    BECAUSE transition CANNOT USE KEYFRAME ANIMATIONS, SUCH AS spin */
+    /* REMOVE infinite FROM transition*/
+    transition: transform 1.5s linear;
+}
+
+.loader-t::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* LIKE IN .loader-t, pulse NEEDS REPLACED WITH transform */
+    /* ALSO LIKE THE OTHER, REMOVE infinite FROM transition */
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+.loader-t:hover {
+    transform: rotate(360deg);
+}
+
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+
+
+
+
+
+/* SECOND ACTIVTY - THE CSS CODE THAT THE LESSON ITSELF USES */
+
+/* #region prepare-css-animations.html Activity: Part 1 — loading icon using animation */
+
+/* .loader {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 2rem rgb(0 0 255 / 40%);
+}
+
+.loader::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+} */
+
+/* #endregion Activity: Part 1 */
+/* #region Activity: Part 2 — loading icon using transition */
+
+/* .loader-t {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    transition: transform 1.5s linear;
+    box-shadow: 0 0 2rem rgb(0 0 255 / 40%);
+}
+
+.loader-t::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+.loader-t:hover {
+    transform: rotate(360deg);
+}
+
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+} */
+
+/* #endregion Activity: Part 2 */
