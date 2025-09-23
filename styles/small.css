@@ -242,6 +242,75 @@ footer {
     background-color: #aaaaaa;
 }
 
+/* ADDED FADE-IN FOR FUN */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: black;
+        color: white;
+
+    }
+
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* MODAL POPUP THING HERE. Apparently I was too basic, so here is the provided settings */
+.popup {
+    /* ??? */
+    border: 1px solid rbg(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+
+    /* ADDED FADE-IN FOR FUN */
+    animation: fadeIn;
+    animation: fadeColor;
+    animation-duration: 2s;
+}
+
+/* .popup h2 {
+    
+        animation: fadeIn;
+        animation: fadeColor;
+        animation-duration: 2s;
+} */
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+
+    /* animation: fadeIn;
+    animation-duration: 2s; */
+}
+
+.popup button {
+    /* ??? */
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 /10%);
+
+    /* animation: fadeIn;
+    animation-duration: 2s; */
+
+}
+
+
 /* TO DO:
 GET FOOTER SOCIALS WORKING GENERALLY, AND DARKMODE
 GET LOGO WORKING FOR DARKMODE
