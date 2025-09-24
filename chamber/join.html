@@ -84,6 +84,110 @@
 
         <!-- PAGE CONTENT GOES HERE -->
 
+        <!-- BUILD FORM HERE -->
+
+
+        <form id="" class="">
+
+            <label>
+                First Name
+                <input type="text" required name="first" title="Your First Name" autocomplete="given-name">
+            </label>
+            <label>
+                Last Name
+                <input type="text" required name="last" title="Your Last Name" autocomplete="family-name">
+            </label>
+            <label>
+                Organizational Title
+                <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="
+                <!-- pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7)
+characters using a regular expression -->
+                ">
+            </label>
+            <label>
+                Email Address
+                <input type="email" required name="email" title="Email Address" autocomplete="email">
+            </label>
+            <label>
+                Mobile Phone Number
+                <input type="tel" required name="tel" title="Mobile Phone Number" autocomplete="tel">
+                <!-- MAY REQUIRE A DIFFERENT AUTO-COMPLETE??? -->
+            </label>
+            <label>
+                Business/Organization Name
+                <input type="text" required name="organization" title="Business/Organization"
+                    autocomplete="organization">
+            </label>
+            <label>
+                Membership Level
+                <!-- INSERT A 4-OPTION MEMBERSHIP SELECTION HERE, CHOOSING FROM: NP (non-profit), BRONZE, SILVER, GOLD -->
+                <form>???</form>
+            </label>
+            <label>
+                Description
+                <input text="textbox" name="description" title="Description">
+            </label>
+
+            <label>
+                <!-- UNSURE HOW BEST TO SET THIS UP; USE A TIME ELEMENT OR JUST WHAT I HAVE BELOW IT? -->
+                <!-- <time></time> -->
+                <!-- Timestamp -->
+                <input type="hidden" name="timestamp" id="timestamp">
+            </label>
+
+            <button>
+                <input type="submit">
+                Submit
+            </button>
+
+        </form>
+
+
+
+
+        <div class="membership-levels">
+
+            <div class="non-profit">
+                Non Profit Membership Level
+                <button>
+                    <dialog id="membership-np" class="membership-details">
+                        Learn More
+                    </dialog>
+
+                </button>
+            </div>
+            <div class="bronze">
+                Bronze Membership Level
+                <button>
+                    <dialog id="membership-bronze" class="membership-details">
+                        Learn More
+                    </dialog>
+
+                </button>
+            </div>
+            <div class="Silver">
+                Silver Membership Level
+                <button>
+                    <dialog id="membership-silver" class="membership-details">
+                        Learn More
+                    </dialog>
+
+                </button>
+            </div>
+            <div class="Gold">
+                Gold Membership Level
+                <button>
+                    <dialog id="membership-gold" class="membership-details">
+                        Learn More
+                    </dialog>
+
+                </button>
+            </div>
+        </div>
+
+
+
+
 
     </main>
 
