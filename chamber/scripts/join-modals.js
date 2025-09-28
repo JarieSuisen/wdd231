@@ -1,9 +1,35 @@
 
-function displayMembershipDetails(memberLevel) {
+
+// const modal = document.querySelector("#display");
+const detailSelect = document.querySelector("#membership-details");
+const modalGold = document.querySelector("#membership-gold");
+const modalSilver = document.querySelector("#membership-silver");
+const modalBronze = document.querySelector("#membership-bronze");
+const modalNp = document.querySelector("#membership-np");
+
+detailSelect.addEventListener('click', () => {
+    const memberLevel = detailSelect.ATTRIBUTE_NODE('id');
+    displayMembershipDetails(memberLevel)
+});
+
+function displayMembershipDetails(level) {
 
     let rank = '';
     let cost = ''; // THIS WILL BE A $Value, not a single number
 
+
+    modalCard.innerHTML = `
+    <div id="modal" class="popup-membership ${}">
+        <button id="closeModal">❌</button>
+        <h2>Non-profit</h2>
+        <p><strong>Cost: </strong>Free</p>
+        <p><strong>Benefits: </strong> Some Benefits</p>
+    </div>
+    `
+
+    closeModal.addEventListener("click", () => {
+        modal - card.close();
+    });
 };
 
 // USE THE FOLLOWING AS THE TARGET DESIGN FOR THE GENERATED MODAL POP-UP

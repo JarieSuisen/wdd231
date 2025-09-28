@@ -1,0 +1,9 @@
+Subject: Library Site
+
+Brief Description:
+
+Main page (welcome, events, other details)
+Checkout page
+Book list with Book Details
+
+Reason: I love books and libraries

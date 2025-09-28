@@ -22,10 +22,14 @@
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="styles/small.css">
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link type="text/css" rel="stylesheet" href="styles/join.css">
+    <link type="text/css" rel="stylesheet" href="styles/join-larger.css">
     <!-- JAVASCRIPT -->
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/join-modals.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
     <!-- ADD LINK TO FAVICON -->
     <link rel="icon" href="favicon.ico">
     <!-- ADD META TAGS FOR SOCIAL MEDIA -->
@@ -87,57 +91,87 @@
         <!-- BUILD FORM HERE -->
 
 
-        <form id="" class="">
+        <form id="join-form" class="">
 
-            <label>
-                First Name
+            <label class="form-category">
+                First Name*
                 <input type="text" required name="first" title="Your First Name" autocomplete="given-name">
             </label>
-            <label>
-                Last Name
+            <label class="form-category">
+                Last Name*
                 <input type="text" required name="last" title="Your Last Name" autocomplete="family-name">
             </label>
-            <label>
+            <label class="form-category">
                 Organizational Title
-                <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="
-                <!-- pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7)
-characters using a regular expression -->
-                ">
+                <input type="text" name="title" title="Organizational Title" autocomplete="organization-title"
+                    pattern="[a-zA-Z\s\-]{7,}" minlength="7">
+                <!-- pattern to only accept:
+                 alpha characters, hyphens, and spaces, with a minimum of seven (7) characters using a regular expression -->
             </label>
-            <label>
-                Email Address
-                <input type="email" required name="email" title="Email Address" autocomplete="email">
+            <label class="form-category">
+                Email Address*
+                <input type="email" required name="email" title="Email Address" autocomplete="email"
+                    placeholder="emailaddress@example.com">
             </label>
-            <label>
-                Mobile Phone Number
-                <input type="tel" required name="tel" title="Mobile Phone Number" autocomplete="tel">
+            <label class="form-category">
+                Mobile Phone Number*
+                <input type="tel" required name="tel" title="Mobile Phone Number" autocomplete="tel"
+                    placeholder="(XXX)XXX-XXXX">
                 <!-- MAY REQUIRE A DIFFERENT AUTO-COMPLETE??? -->
             </label>
-            <label>
-                Business/Organization Name
+            <label class="form-category">
+                Business/Organization Name*
                 <input type="text" required name="organization" title="Business/Organization"
                     autocomplete="organization">
             </label>
-            <label>
-                Membership Level
+            <label class="form-category">
+
                 <!-- INSERT A 4-OPTION MEMBERSHIP SELECTION HERE, CHOOSING FROM: NP (non-profit), BRONZE, SILVER, GOLD -->
-                <form>???</form>
+                <div class="membership-form">
+                    Membership Level
+                    <label class="radio" for="member-np">
+                        <input class="radio-option" type="radio" id="member-np" name="membership-select"
+                            value="np"></input>
+                        Nonprofit
+                    </label>
+
+                    <label class="radio" for="member-bronze">
+                        <input class="radio-option" type="radio" id="member-bronze" name="membership-select"
+                            value="bronze"></input>
+                        Bronze
+                    </label>
+
+                    <label class="radio" for="member-silver">
+                        <input class="radio-option" type="radio" id="member-silver" name="membership-select"
+                            value="silver"></input>
+                        Silver
+                    </label>
+
+                    <label class="radio" for="member-gold">
+                        <input class="radio-option" type="radio" id="member-gold" name="membership-select"
+                            value="gold"></input>
+                        Gold
+                    </label>
+
+                </div>
             </label>
-            <label>
+            <label class="form-category">
                 Description
-                <input text="textbox" name="description" title="Description">
+                <textarea name="description" title="Description"></textarea>
             </label>
 
-            <label>
+            <label class="form-category">
                 <!-- UNSURE HOW BEST TO SET THIS UP; USE A TIME ELEMENT OR JUST WHAT I HAVE BELOW IT? -->
                 <!-- <time></time> -->
                 <!-- Timestamp -->
                 <input type="hidden" name="timestamp" id="timestamp">
             </label>
 
-            <button>
-                <input type="submit">
-                Submit
+            <button class="join-button">
+                Join Us!
+                <input type="submit" hidden>
+                <!-- NOTE: ADDED hidden TRAIT TO SEE THE "Join Us!", BUT IT MAY BREAK THINGS INSTEAD -->
+                <!-- Join Us! -->
             </button>
 
         </form>
@@ -145,40 +179,44 @@ characters using a regular expression -->
 
 
 
-        <div class="membership-levels">
-
-            <div class="non-profit">
+        <div class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="membership non-profit">
                 Non Profit Membership Level
-                <button>
-                    <dialog id="membership-np" class="membership-details">
-                        Learn More
+                <button class="membership-details">
+                    Learn More
+                    <dialog id="membership-np">
+
                     </dialog>
 
                 </button>
             </div>
-            <div class="bronze">
+            <div class="membership bronze">
                 Bronze Membership Level
-                <button>
-                    <dialog id="membership-bronze" class="membership-details">
-                        Learn More
+                <button class="membership-details">
+                    Learn More
+                    <dialog id="membership-bronze">
+
                     </dialog>
 
                 </button>
             </div>
-            <div class="Silver">
+            <div class="membership silver">
                 Silver Membership Level
-                <button>
-                    <dialog id="membership-silver" class="membership-details">
-                        Learn More
+                <button class="membership-details">
+                    Learn More
+                    <dialog id="membership-silver">
+
                     </dialog>
 
                 </button>
             </div>
-            <div class="Gold">
+            <div class="membership gold">
                 Gold Membership Level
-                <button>
-                    <dialog id="membership-gold" class="membership-details">
-                        Learn More
+                <button class="membership-details">
+                    Learn More
+                    <dialog id="membership-gold">
+
                     </dialog>
 
                 </button>

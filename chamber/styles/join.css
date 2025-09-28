@@ -1,0 +1,112 @@
+* {
+    /* border: 1px red solid; */
+}
+
+label.form-category {
+    /* background-color: orange; */
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+}
+
+label.membership-selection {
+    /* background-color: orange; */
+    /* margin: 1px; */
+}
+
+.membership-form {
+    /* background-color: orange; */
+    display: flex;
+    /* size: 20rem; */
+    /* text-align: left; */
+}
+
+input {
+    /* background-color: orange; */
+    height: 2rem;
+    width: 90%;
+}
+
+label.radio {
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+    margin-right: 2rem;
+}
+
+.radio-option {
+    /* background-color: orange; */
+    /* color: orange; */
+    /* width: 50%; */
+    /* text-align: left; */
+    /* margin: 0 auto; */
+    margin-top: 1rem;
+    /* display: block; */
+    /* display: inline-flex; */
+    /* align-items: center; */
+
+}
+
+/* -------------------------------------------- */
+.Radio {
+    display: inline-flex;
+    align-items: center;
+}
+
+.Radio--large {
+    font-size: 2em;
+}
+
+.Radio-Input {
+    margin: 0 0.5em 0;
+}
+
+/* -------------------------------------------- */
+textarea {
+    min-height: 6rem;
+    width: 90%;
+    /* padding-right: 1rem; */
+    /* margin: 10%; */
+}
+
+button {
+    /* display: none; */
+}
+
+.join-button {
+    /* background: yellow; */
+    height: 3rem;
+    width: 6rem;
+    border-radius: 15px;
+}
+
+.membership-cards {
+    margin-top: 2rem;
+    /* justify-content: center; */
+    /* background-color: orange; */
+}
+
+.membership {
+    /* background: blue; */
+    margin: 5px;
+    padding: 1rem;
+    border: 1px black solid;
+    border-radius: 15px;
+    height: 4rem;
+
+    width: 80%;
+
+    justify-self: center;
+    display: block;
+}
+
+.membership-details {
+    /* background-color: orange; */
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+}
