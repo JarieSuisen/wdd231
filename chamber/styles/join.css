@@ -76,6 +76,17 @@ button {
 
 
 
+.membershipCards {
+    display: block;
+    
+    /* min-height: fit-content; */
+}
+
+#membership-cards {
+    min-height: fit-content;
+
+}
+
 .membership-cards {
     margin-top: 2rem;
     /* justify-content: center; */
@@ -96,6 +107,7 @@ button {
 
     justify-self: center;
     display: block;
+    min-height: fit-content;
 }
 
 .membership-details {
@@ -103,4 +115,18 @@ button {
     display: flex;
     justify-self: center;
     margin-top: 1rem;
+}
+
+
+/* CLASSES FOR GENERATED CARDS, IF DIFFERING FROM ABOVE */
+.membership {
+    /*  */
+}
+
+.cardText {
+    /*  */
+}
+
+.modal-btn {
+    /*  */
 }
