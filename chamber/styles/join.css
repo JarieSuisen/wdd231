@@ -19,7 +19,11 @@ label.membership-selection {
 
 .membership-form {
     /* background-color: orange; */
-    display: flex;
+
+    /* SHOULD BE FLEX??? */
+    display: inline-flex;
+    /* align-items: center; */
+
     /* size: 20rem; */
     /* text-align: left; */
 }
@@ -51,21 +55,7 @@ label.radio {
 
 }
 
-/* -------------------------------------------- */
-.Radio {
-    display: inline-flex;
-    align-items: center;
-}
 
-.Radio--large {
-    font-size: 2em;
-}
-
-.Radio-Input {
-    margin: 0 0.5em 0;
-}
-
-/* -------------------------------------------- */
 textarea {
     min-height: 6rem;
     width: 90%;
@@ -84,6 +74,8 @@ button {
     border-radius: 15px;
 }
 
+
+
 .membership-cards {
     margin-top: 2rem;
     /* justify-content: center; */
@@ -91,7 +83,9 @@ button {
 }
 
 .membership {
-    /* background: blue; */
+    background: var(--gray);
+    /* color: black; */
+
     margin: 5px;
     padding: 1rem;
     border: 1px black solid;
