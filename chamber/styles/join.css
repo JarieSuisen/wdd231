@@ -2,7 +2,7 @@
     /* border: 1px red solid; */
 }
 
-label.form-category {
+.form-category {
     /* background-color: orange; */
     display: block;
     margin: 0 auto;
@@ -69,6 +69,7 @@ button {
 
 .join-button {
     /* background: yellow; */
+    justify-self: center;
     height: 3rem;
     width: 6rem;
     border-radius: 15px;
