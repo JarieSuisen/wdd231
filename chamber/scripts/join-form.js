@@ -29,13 +29,14 @@ const time = memberInfo.get('timestamp');
 
 // ???
 document.querySelector('#data').innerHTML = `
-Name: ${first}, ${last}<br>
-Title: ${title}<br>
+First Name: ${first}<br>
+Last Name: ${last}<br>
+<!-- Title: ${title}<br> -->
 email: ${email}<br>
-phone: ${phone}<br>
+Phone Number: ${phone}<br>
 Organization: ${org}<br>
-Membership Rank: ${tier}<br>
-Description: ${desc}<br>
+<!-- Membership Rank: ${tier}<br> -->
+<!-- Description: ${desc}<br> -->
 <br>
 Submission Date: ${time}
 `;

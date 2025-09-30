@@ -78,7 +78,7 @@ button {
 
 .membershipCards {
     display: block;
-    
+
     /* min-height: fit-content; */
 }
 
@@ -129,4 +129,23 @@ button {
 
 .modal-btn {
     /*  */
+}
+
+
+/* CSS FOR THE THANKYOU PAGE CONTENTS */
+
+#data {
+    /* background-color: orange; */
+
+    border: 1px solid var(--black);
+    border-radius: 3%;
+    justify-self: center;
+
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    padding: 1rem;
+    background-color: var(--gray);
+
+
 }
