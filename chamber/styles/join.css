@@ -74,7 +74,10 @@ button {
     border-radius: 15px;
 }
 
-
+.thanks {
+    text-align: left;
+    padding: 1rem;
+}
 
 .membershipCards {
     display: block;
@@ -119,8 +122,33 @@ button {
 
 
 /* CLASSES FOR GENERATED CARDS, IF DIFFERING FROM ABOVE */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeColor {
+    from {
+        background-color: var(--black);
+        color: var(--white);
+
+    }
+
+    to {
+        background-color: var(--white);
+        color: var(--black);
+    }
+}
+
 .membership {
     /*  */
+
 }
 
 .cardText {
@@ -129,6 +157,14 @@ button {
 
 .modal-btn {
     /*  */
+}
+
+.modal {}
+
+.popup {
+    animation: fadeIn;
+    animation: fadeColor;
+    animation-duration: 3s;
 }
 
 
