@@ -24,12 +24,15 @@
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
     <link type="text/css" rel="stylesheet" href="styles/join.css">
     <link type="text/css" rel="stylesheet" href="styles/join-larger.css">
+    
     <!-- JAVASCRIPT -->
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+
     <script src="scripts/join-modals.js" defer></script>
-    <script src="scripts/join-form.js" defer></script>
+    <!-- <script src="scripts/join-form.js" defer></script> -->
+
     <!-- ADD LINK TO FAVICON -->
     <link rel="icon" href="favicon.ico">
     <!-- ADD META TAGS FOR SOCIAL MEDIA -->
@@ -91,7 +94,7 @@
         <!-- BUILD FORM HERE -->
 
 
-        <form id="join-form" class="">
+        <form method="GET" action="thankyou.html" id="join-form">
 
             <label class="form-category">
                 First Name*
@@ -115,7 +118,7 @@
             </label>
             <label class="form-category">
                 Mobile Phone Number*
-                <input type="tel" required name="tel" title="Mobile Phone Number" autocomplete="tel"
+                <input type="tel" required name="phone" title="Mobile Phone Number" autocomplete="tel"
                     placeholder="(XXX)XXX-XXXX">
                 <!-- MAY REQUIRE A DIFFERENT AUTO-COMPLETE??? -->
             </label>
@@ -131,25 +134,25 @@
                     Membership Level<br>
                     <label class="radio" for="member-np">
                         <input class="radio-option" type="radio" id="member-np" name="membership-select"
-                            value="np"></input>
+                            value="Nonprofit"></input>
                         Nonprofit
                     </label>
 
                     <label class="radio" for="member-bronze">
                         <input class="radio-option" type="radio" id="member-bronze" name="membership-select"
-                            value="bronze"></input>
+                            value="Bronze"></input>
                         Bronze
                     </label>
 
                     <label class="radio" for="member-silver">
                         <input class="radio-option" type="radio" id="member-silver" name="membership-select"
-                            value="silver"></input>
+                            value="Silver"></input>
                         Silver
                     </label>
 
                     <label class="radio" for="member-gold">
                         <input class="radio-option" type="radio" id="member-gold" name="membership-select"
-                            value="gold"></input>
+                            value="Gold"></input>
                         Gold
                     </label>
 
@@ -169,7 +172,7 @@
 
             <button class="join-button">
                 Join Us!
-                <input type="submit" hidden>
+                <type="submit" hidden>
                 <!-- NOTE: ADDED hidden TRAIT TO SEE THE "Join Us!", BUT IT MAY BREAK THINGS INSTEAD -->
                 <!-- Join Us! -->
             </button>
@@ -194,52 +197,6 @@
         <!-- ADDED "popup" CLASS FOR STYLING ACCURACY -->
         <dialog id="membership-details" class="popup"></dialog>
 
-        <!-- 
-        <div class="membership-cards">
-            <h2>Membership Levels</h2>
-
-            <div class="membership non-profit">
-                Non Profit Membership Level
-                <button class="membership-details">
-                    Learn More
-                    <dialog id="membership-np">
-
-                    </dialog>
-
-                </button>
-            </div>
-
-            <div class="membership bronze">
-                Bronze Membership Level
-                <button class="membership-details">
-                    Learn More
-                    <dialog id="membership-bronze">
-
-                    </dialog>
-
-                </button>
-            </div>
-            <div class="membership silver">
-                Silver Membership Level
-                <button class="membership-details">
-                    Learn More
-                    <dialog id="membership-silver">
-
-                    </dialog>
-
-                </button>
-            </div>
-            <div class="membership gold">
-                Gold Membership Level
-                <button class="membership-details">
-                    Learn More
-                    <dialog id="membership-gold">
-
-                    </dialog>
-
-                </button>
-            </div>
-        </div> -->
 
 
 

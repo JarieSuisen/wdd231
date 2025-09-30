@@ -1,3 +1,29 @@
+// DATES SECTION
+
+const timestamp = document.querySelector('#timestamp');
+
+// console.log(`today is: ${today}`);
+
+// console.log(today.getDate());
+
+const thisDay = today.getDate();
+const thisMonth = today.toLocaleString('default', { month: 'long' });
+const thisYear = today.getFullYear();
+
+// thisMonth.toLocaleString('default', { month: 'long' })
+
+// console.log(thisDay);
+// console.log(thisMonth);
+// console.log(thisYear);
+
+const thisDate = `${thisMonth} ${thisDay}, ${thisYear}`;
+
+timestamp.value = thisDate;
+// console.log(`Timestamp: ${timestamp.value}`);
+
+
+
+// MODAL SECTION
 
 // CONSTRUCT THE JSON STUFF
 const tiersData = [
@@ -51,7 +77,7 @@ function membershipDisplay(membershipData) {
     // console.table(membershipData);
 
     membershipData.forEach(tier => {
-        
+
         // console.table(tier);
 
         // CREATE ELEMENTS
@@ -59,7 +85,7 @@ function membershipDisplay(membershipData) {
         let displayText = document.createElement('h2');
         let button = document.createElement('button');
 
-        
+
         // EXTRACT DATA
         let rank = tier['rank'];
         // let cost = tier['cost'];
@@ -82,7 +108,7 @@ function membershipDisplay(membershipData) {
         // document.querySelector('.membership-cards').innerHTML.appendChild(displayCard);
         cards.appendChild(displayCard);
 
-// ADD EVENT LISTENER
+        // ADD EVENT LISTENER
         button.addEventListener('click', () => {
             displayMembershipDetails(tier);
         });
