@@ -1,0 +1,30 @@
+* {
+    /* border: 1px solid red; */
+}
+
+:root {
+    /* +++++ LIGHT MODE COLOR SCHEME +++++ */
+    --color1: ;
+    --color2: ;
+    --color3: ;
+    --black: #000000;
+    --white: #ffffff;
+
+    --gray: #bbbbbb;
+    /* +++++ END LIGHT MODE COLOR SCHEME +++++ */
+
+    /* === NOTE: DARK MODE COLOR SCHEME IS AT VERY END OF DOCUMENT === */
+}
+
+
+
+
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+
+
+
+
+
+}
