@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Temple Square",
+            "address": "50 North Temple, Salt Lake City, UT 84150",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "Utah State Capitol",
+            "address": "350 State St, Salt Lake City, UT 84114",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "Clark Planetarium",
+            "address": "110 400 W, Salt Lake City, UT 84101",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "Utah Hogle Zoo",
+            "address": "2600 Sunnyside Ave S, Salt Lake City, UT 84108",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "This Is The Place Heritage Park",
+            "address": "2601 Sunnyside Ave S, Salt Lake City, UT 84108",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "Utah State Fairpark",
+            "address": "155 1000 W, Salt Lake City, UT 84116",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "Gateway Mall",
+            "address": "400 W 200 S, Salt Lake City, UT 84101",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        },
+        {
+            "name": "The Great Salt Lake (Visitor Center)",
+            "address": "13312 Western Dr, Magna, UT 84044",
+            "description": "DESCRIPTION HERE",
+            "photo": "./images/IMAGENAME.webp"
+        }
+    ]
+}
