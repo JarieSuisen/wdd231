@@ -3,50 +3,50 @@
         {
             "name": "Temple Square",
             "address": "50 North Temple, Salt Lake City, UT 84150",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "A beautiful area where the Salt Lake Temple stands.",
+            "photo": "./images/temple-square.webp"
         },
         {
             "name": "Utah State Capitol",
             "address": "350 State St, Salt Lake City, UT 84114",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "This is the state capitol of Utah. A wide area with tall hills, it is also a bit like a park to visit.",
+            "photo": "./images/utah-capitol.webp"
         },
         {
             "name": "Clark Planetarium",
             "address": "110 400 W, Salt Lake City, UT 84101",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "The main planetarium in Utah, it is the successor to the Hansen Planetarium. A wonderful location that everyone should visit and learn about the universe in many kinds of interactive areas! Check out the amazing lazer shows and Imax videos.",
+            "photo": "./images/clark-planetarium.webp"
         },
         {
             "name": "Utah Hogle Zoo",
             "address": "2600 Sunnyside Ave S, Salt Lake City, UT 84108",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "With its origins established in 1911, the Utah Hogle Zoo has stood in its current location since 1931. Many animals can be found here!",
+            "photo": "./images/hogle-zoo.webp"
         },
         {
             "name": "This Is The Place Heritage Park",
             "address": "2601 Sunnyside Ave S, Salt Lake City, UT 84108",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "Including various historical sites, this park marks the area where the saints entered the Salt Lake valley.",
+            "photo": "./images/heritage-park.webp"
         },
         {
             "name": "Utah State Fairpark",
-            "address": "155 1000 W, Salt Lake City, UT 84116",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "address": "155 N 1000 W, Salt Lake City, UT 84116",
+            "description": "Fairgrounds for various large events.",
+            "photo": "./images/state-fairpark.webp"
         },
         {
-            "name": "Gateway Mall",
+            "name": "The Gateway",
             "address": "400 W 200 S, Salt Lake City, UT 84101",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "A large mall with open-air access between shops, it is a great location to visit, browse, and shop.",
+            "photo": "./images/gateway-mall.webp"
         },
         {
             "name": "The Great Salt Lake (Visitor Center)",
             "address": "13312 Western Dr, Magna, UT 84044",
-            "description": "DESCRIPTION HERE",
-            "photo": "./images/IMAGENAME.webp"
+            "description": "Big, wet, and salty. Though it has lost much of its former glory to the passage of time and both social and environmental changes, it is still a major location of Utah. It remains a popular attraction, with many boaters and gliders enjoying the area. The visitor center is found near the main parking area for visiting the lakeshor.",
+            "photo": "./images/salt-lake.webp"
         }
     ]
 }

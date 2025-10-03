@@ -126,7 +126,7 @@ function readDatestring() {
 
 
     if (readDate) {
-        console.log(`THE READ DATE IS: ${readDate}`)
+        // console.log(`THE READ DATE IS: ${readDate}`)
 
         const date = Date.parse(readDate);
         // console.log(`THE PARSED READ DATE IS: ${date}`)
