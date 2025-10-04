@@ -3,6 +3,50 @@
 }
 
 
-.grid-area {
+
+.card {
+
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
     display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "location"
+        "description";
+}
+
+
+
+.card-title {
+    margin: 1rem 10px;
+
+    grid-area: name;
+}
+
+
+.card-image {
+    width: 100%;
+
+
+    grid-area: photo;
+}
+
+
+.card-address {
+    margin: 1 rem 10px;
+
+    grid-area: location;
+}
+
+
+
+.card-paragraph {
+    margin: 1 rem 10px;
+
+    grid-area: description;
 }
