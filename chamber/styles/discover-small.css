@@ -7,10 +7,11 @@
 .card {
 
     margin: 1rem 8px;
-    border: 1px solid #999;
-    background-color: #eee;
+    border: 1px solid #444;
+    background-color: #999;
     border-radius: 8px;
     overflow: hidden;
+
 
     display: grid;
     grid-template-areas:
@@ -24,6 +25,7 @@
 
 .card-title {
     margin: 1rem 10px;
+    padding: 2px;
 
     grid-area: name;
 }
@@ -39,6 +41,7 @@
 
 .card-address {
     margin: 1 rem 10px;
+    padding: 2px;
 
     grid-area: location;
 }
@@ -47,6 +50,7 @@
 
 .card-paragraph {
     margin: 1 rem 10px;
+    padding: 2px;
 
     grid-area: description;
 }
