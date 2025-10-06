@@ -23,8 +23,13 @@
 body {
     font-family: "Noto Sans JP", sans-serif;
 
+    color: var(--black);
+    background-color: var(--white);
 
 
 
+}
 
+.box-content {
+    background-color: var(--gray);
 }
