@@ -45,13 +45,14 @@ div {
     text-align: left;
     margin: 10px;
     padding: 5px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .box-content {
     background-color: var(--gray);
     border: 1px solid var(--black);
     border-radius: 5px;
+    padding: 10px;
 
 }
 
