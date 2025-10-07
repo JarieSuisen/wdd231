@@ -16,10 +16,6 @@
     /* === NOTE: DARK MODE COLOR SCHEME IS AT VERY END OF DOCUMENT === */
 }
 
-
-
-
-
 body {
     font-family: "Noto Sans JP", sans-serif;
 
@@ -29,3 +25,83 @@ body {
 
 
 }
+
+/* HAMBURGER & NAVIGATION MENU */
+#ham-btn {
+    margin-left: auto;
+    /* background-color: orange; */
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00d7";
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navigation {
+    display: none;
+    text-align: center;
+
+    width: 100%;
+    order: 1;
+    margin-left: 50%;
+}
+
+.navigation.show {
+    display: block;
+    margin-top: 1rem;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: end;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    /* margin-left: 50%; */
+    text-decoration: none;
+    border-bottom: solid 1px var(--gray);
+    border-left: solid 1px var(--gray);
+    border-right: solid 1px var(--gray);
+    align-items: center;
+}
+
+.navigation .current {
+    background-color: var(--gray);
+    /* margin-left: 50%; */
+    /* justify-content: center; */
+}
+
+.navigation a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* END HAMBURGER & NAVIGATION MENU */
+
+header {}
+
+main {}
+
+footer {}
