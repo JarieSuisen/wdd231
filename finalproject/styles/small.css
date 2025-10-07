@@ -60,7 +60,7 @@ header {
     text-align: center;
 
     width: 100%;
-    order: 1;
+    /* order: 1; */
     margin-left: 50%;
 }
 
@@ -98,10 +98,86 @@ header {
     color: var(--white);
 }
 
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+
 /* END HAMBURGER & NAVIGATION MENU */
 
-header {}
+header {
+    border-bottom: solid 1px black;
+}
+
+header span {
+    font-size: 2rem;
+}
 
 main {}
 
-footer {}
+footer {
+    border-top: solid 1px black;
+    /* display: flex; */
+}
+
+.textbox {
+    /* background-color: orange; */
+    width: fit-content;
+    padding: 5px;
+    /* display: flex; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.socials {
+    display: flex;
+    /* justify-self: center; */
+    /* align-self: center; */
+    /* margin: 0 auto; */
+    padding: 5px;
+    /* align-content: center; */
+    justify-content: center;
+
+}
+
+.socials a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 5px;
+    /* align-content: center; */
+    margin: 5px;
+    justify-content: center;
+    /* margin: 0 auto; */
+
+    border: 1px solid black;
+    border-radius: 50px;
+    /* background-color: orange; */
+}
+
+.socials a svg {
+    /* display: flex; */
+    width: 32px;
+    height: 32px;
+    align-self: center;
+
+    padding: 5px;
+
+
+
+
+}
+
+#videolink {
+    display: flex;
+    justify-self: center;
+}

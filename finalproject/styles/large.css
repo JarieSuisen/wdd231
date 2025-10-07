@@ -1,0 +1,115 @@
+@media only screen and (min-width: 38rem) {
+    /*  */
+
+    * {
+        /* border: 1px solid red; */
+    }
+
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+        /* background-color: pink; */
+    }
+
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0px;
+        /* NOT SURE ABOUT THIS */
+        /* align-items: normal; */
+
+        /* background-color: yellow; */
+    }
+
+    header span {
+        /* margin: 0 auto; */
+        margin-left: 10px;
+        flex-shrink: 0;
+        /* white-space: nowrap; */
+
+        /* margin-right: 200px; */
+        /* width: 50000rem; */
+        /* display: block; */
+        /* flex-wrap: nowrap; */
+
+        /* background-color: blue; */
+    }
+
+    .navigation {
+        display: flex;
+        margin-left: auto;
+        /* margin-right: 0; */
+        width: auto;
+        /* justify-self: right; */
+        /* margin-top: none; */
+        /* margin-left: auto; */
+        /* float: right; */
+        /* margin: 0 auto; */
+        /* margin-left: 100%; */
+        /* margin-right:auto; */
+        /* place-self: right; */
+        font-size: 1.5rem;
+
+
+        /* background-color: orange; */
+
+    }
+
+    .navigation ul {
+        display: flex;
+
+    }
+
+    .navigation a {
+        /* height: 2rem; */
+        /* align-items: center; */
+        border: none;
+        display: flex;
+        /* padding: 10px 10px; */
+
+    }
+
+
+    .footercontent {
+        display: flex;
+    }
+
+    .socials {
+        align-self: center;
+    }
+
+    .textbox {
+        text-align: left;
+    }
+
+    #videolink {
+        padding-top: 5px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
