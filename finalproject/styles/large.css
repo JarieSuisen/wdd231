@@ -73,6 +73,24 @@
 
     }
 
+    .hero{
+        /* border-bottom: solid 1px orange; */
+        /* padding-bottom: -200px; */
+        /* z-index: -1; */
+        
+    }
+
+    .hero img{
+        /* padding-bottom: -200px; */
+    }
+
+    h1 {
+        
+        /* margin-top: -200px; */
+        /* background-color: gray; */
+    }
+
+
 
     .footercontent {
         display: flex;

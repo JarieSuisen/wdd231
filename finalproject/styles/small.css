@@ -65,8 +65,10 @@ header {
 }
 
 .navigation.show {
+    /* I WANT to have the navigation overlap the Hero Image, rather than displace it */
     display: block;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+
 }
 
 .navigation ul {
@@ -79,20 +81,15 @@ header {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    /* margin-left: 50%; */
+
     text-decoration: none;
     border: solid 1px var(--gray);
-    /* border-bottom: solid 1px var(--gray); */
-    /* border-left: solid 1px var(--gray); */
-    /* border-right: solid 1px var(--gray); */
-    /* border-top: solid 1px var(--gray); */
     align-items: center;
 }
 
 .navigation .current {
     background-color: var(--gray);
-    /* margin-left: 50%; */
-    /* justify-content: center; */
+
 }
 
 .navigation a:hover {
@@ -124,14 +121,44 @@ header span {
     font-size: 2rem;
 }
 
+.hero {
+    /*  */
+    justify-self: center;
+    align-self: center;
+}
+
+.hero img {
+    /* display: flex; */
+    width: 100%;
+
+    justify-self: center;
+    align-self: center;
+
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    /* margin-left: 1rem; */
+}
+
+.textbox {
+    margin: 1rem;
+}
+
+.eventbox {
+    margin: 1rem;
+}
+
 main {}
 
 footer {
     border-top: solid 1px black;
     /* display: flex; */
+    margin-top: 1rem;
 }
 
-.textbox {
+.footer-textbox {
     /* background-color: orange; */
     width: fit-content;
     padding: 5px;
