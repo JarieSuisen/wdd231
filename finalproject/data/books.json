@@ -1,0 +1,84 @@
+{
+    "books": [
+        {
+            "title": "A Spell For Chameleon",
+            "series": "Xanth",
+            "volume": "1",
+            "author": "Piers Anthony",
+            "genre": "Fantasy, Adventure",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Vale of the Vole",
+            "series": "Xanth",
+            "volume": "10",
+            "author": "Piers Anthony",
+            "genre": "Fantasy, Adventure",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Isle of View",
+            "series": "Xanth",
+            "volume": "13",
+            "author": "Piers Anthony",
+            "genre": "Fantasy, Adventure",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Pokémon Special, vol. 1",
+            "series": "Pokémon Special",
+            "volume": "1",
+            "author": "",
+            "genre": "Fantasy, Science-fiction, Adventure",
+            "blurb": "",
+            "language": "Japanese",
+            "format": "Manga, Paperback"
+        },
+        {
+            "title": "Pokémon Adventures, vol. 1",
+            "series": "Pokémon Special",
+            "volume": "1",
+            "author": "",
+            "genre": "Fantasy, Science-fiction, Adventure",
+            "blurb": "",
+            "language": "English",
+            "format": "Manga, Paperback"
+        },
+        {
+            "title": "",
+            "series": "",
+            "volume": "",
+            "author": "",
+            "genre": "",
+            "blurb": "",
+            "language": "",
+            "format": ""
+        },
+        {
+            "title": "",
+            "series": "",
+            "volume": "",
+            "author": "",
+            "genre": "",
+            "blurb": "",
+            "language": "",
+            "format": ""
+        },
+        {
+            "title": "",
+            "series": "",
+            "volume": "",
+            "author": "",
+            "genre": "",
+            "blurb": "",
+            "language": "",
+            "format": ""
+        }
+    ]
+}

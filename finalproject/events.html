@@ -29,10 +29,11 @@
     <link type="text/css" rel="stylesheet" href="styles/large.css">
 
     <!-- JAVASCRIPT -->
-    <!-- <script src="scripts/library.mjs" defer></script> -->
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/videolink.js" defer></script>
+
+    <script src="scripts/events.js" defer></script>
 
 
     <!-- ADD LINK TO FAVICON -->
@@ -72,7 +73,15 @@
 
         <!-- GENERATED LIST OF ALL "EVENTS" THAT ARE COMING. 
          CONTENT COMES FROM A JSON DOCUMENT 
-         Details: Event Name, Date and weekday, Hours Active, Host Name(s), Brief Summary
+         Details:
+                Event Name, 
+                Date and weekday, 
+                Hours Active, 
+                Host Name(s), 
+                Brief Summary
+                
+                Can open a modal to view full details
+                Host and Summary are in Full Details
          -->
 
         <div id="event-list"></div>
