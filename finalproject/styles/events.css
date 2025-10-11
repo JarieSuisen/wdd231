@@ -1,0 +1,38 @@
+#event-list {
+    display: block;
+    
+    margin: 0 auto;
+    justify-content: center;
+    /* align-content: center; */
+    
+}
+
+
+.event-card {
+    /* display: flex; */
+    border: 1px solid black;
+
+    justify-self: center;
+
+    width: 80%;
+    /* min-width: 25%; */
+    /* margin: 0 auto; */
+    margin: 10px;
+    padding: 5px;
+
+    text-align: center;
+    /* display: flex; */
+
+}
+
+#event-details {
+
+    justify-self: center;
+    align-self: center;
+
+    text-align: center;
+
+    margin: 20px;
+
+}
+

@@ -14,9 +14,62 @@ async function getCompanyData(view) {
 
     displayCompanies(data['companies'], view);
 
+
+    // if (view === 'grid') {
+    //     // console.log('LOADING GRID'); // COMMENT ME - SHOWS IN CONSOLE IF THIS IS BEING CALLED
+    //     displayCompanies(data['companies'], view);
+    //     // console.table(data['companies']) // COMMENT ME - SHOWS TABLE IN CONSOLE
+    // }
+    // else if (view === 'list') {
+    //     // console.log('LOADING LIST'); // COMMENT ME - SHOWS IN CONSOLE IF THIS IS BEING CALLED
+    //     displayCompanies(data['companies'], view);
+    //     // console.table(data['companies']) // COMMENT ME - SHOWS TABLE IN CONSOLE
+    // };
+
+    // displayCompanies(jsonArray); // THIS CALLS THE OPERATION THAT WILL DISPLAY THE INFORMATION.
 };
 
 getCompanyData('grid'); // TRIGGERS THE LAYOUT indicated as default
+
+// // GRID MODE
+// function displayCompaniesGrid(companies) {
+//     companies.forEach(company => {
+//         const card = buildCompanyData(company);
+
+//         // BUILD DATA CARD HERE
+
+//         // BUILD ELEMENT TREE BY ASSIGNING FROM LOWEST TO HIGHEST, IN ORDER DESIRED FOR DISPLAY
+
+//         // --- CARD LAYOUT
+//         // LOGO, ADDRESS< PHONE< URL
+//         card.appendChild(companyLogo);
+//         card.appendChild(companyAddress);
+//         card.appendChild(companyPhone);
+//         card.appendChild(companyUrl);
+
+
+//         // ASSIGN CARD ELEMENT TO THE CARDS ITEM FOR DISPLAY
+//         cards.appendChild(card);
+
+
+
+//     });
+
+// };
+
+
+
+// // LIST MODE
+// function displayCompaniesList(companies) {
+//     companies.forEach(company => {
+//         buildCompanyData(company);
+
+//         // BUILD DATA LIST HERE
+
+
+//     });
+
+// };
 
 
 function displayCompanies(companies, view) {

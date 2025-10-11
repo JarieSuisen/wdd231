@@ -1,39 +1,40 @@
 {
     "events": [
-        {
-            "name": "The Power of Knowledge in Self Defense",
-            "date": "",
-            "time": "",
-            "host": "Nobunaga Oda",
-            "summary": ""
-        },
+        
         {
             "name": "Introducing You To Your Family History",
-            "date": "10/20/2025",
+            "date": "Oct. 20, 2025",
             "time": "and relative dimensions in space",
             "host": "Susan Foreman",
             "summary": "We will meet with your ancestors, so you can ask them in person instead of guessing from what records remain."
         },
         {
-            "name": "Pizza Party",
-            "date": "",
-            "time": "",
-            "host": "A Lady with an Alligator Purse",
-            "summary": ""
+            "name": "The Power of Knowledge in Self Defense",
+            "date": "Oct. 22",
+            "time": "12:30pm-3:30pm",
+            "host": "Nobunaga Oda",
+            "summary": "A course studying the methods of past practitioners."
         },
         {
-            "name": "Emotional Empowerment Through Music",
-            "date": "",
-            "time": "",
-            "host": "B★RS",
-            "summary": ""
+            "name": "Pizza Party",
+            "date": "Your Birthday",
+            "time": "All day",
+            "host": "A Lady with an Alligator Purse",
+            "summary": "Get ready for the biggest party of your life!"
         },
         {
             "name": "Murder Mystery",
-            "date": "",
+            "date": "Oct. 31",
             "time": "7:30pm",
             "host": "Mr. Body",
             "summary": "I know who you are, and where and how you will do it. It will be murder... by death!"
+        },
+        {
+            "name": "Emotional Empowerment Through Music",
+            "date": "Nov. 3",
+            "time": "6pm-8pm",
+            "host": "B★RS",
+            "summary": "Working together to increase skills in music and supporting each other as we build ourselves up."
         }
     ]
 }
