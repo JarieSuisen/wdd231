@@ -99,6 +99,8 @@
 
     .footercontent {
         display: flex;
+        
+        /* justify-content: right; */
     }
 
     .socials {
