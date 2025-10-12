@@ -1,0 +1,8 @@
+
+function checkout() {
+
+
+};
+
+
+export { checkout };

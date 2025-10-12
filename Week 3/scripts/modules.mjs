@@ -11,6 +11,7 @@ document.querySelector("#enrollStudent").addEventListener("click", function () {
 
 
 });
+
 document.querySelector("#dropStudent").addEventListener("click", function () {
     const sectionNum = Number(document.querySelector("#sectionNumber").value);
     byuiCourse.changeEnrollment(sectionNum, false);
