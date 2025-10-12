@@ -1,5 +1,5 @@
 import makeTable from './books-listing.mjs';
-// import { ??? } from './???.mjs';
+import { timestamp } from './timestamp.mjs';
 import { parseJson } from './books-json.mjs';
 // import { checkout } from './books-checkout.mjs';
 
@@ -17,6 +17,8 @@ const bookData = await parseJson(bookJson);
 makeTable(bookData);
 
 // checkout();
+
+timestamp();
 
 
 // OPERATIONAL CODE HERE

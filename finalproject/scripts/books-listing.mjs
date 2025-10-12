@@ -13,11 +13,14 @@ function makeTable(jsondata) {
         const card = document.createElement('section');
         card.classList.add('book-card');
 
+        const details = document.createElement('div');
+        details.classList.add('book-details');
+
         // CREATE JSON DETAIL ELEMENT CONTAINERS
         const bookTitle = document.createElement('p');
         bookTitle.classList.add('title')
         const bookSeries = document.createElement('p');
-        const bookVolume = document.createElement('p');
+        // const bookVolume = document.createElement('p');
         const bookAuthor = document.createElement('p');
         // const bookGenre = document.createElement('p');
         // const bookBlurb = document.createElement('p');
@@ -37,11 +40,11 @@ function makeTable(jsondata) {
         bookTitle.style.fontWeight = 'bold';
         bookTitle.classList.add('book-title');
 
-        bookSeries.textContent = `Series: ${book.series}`;
+        bookSeries.textContent = `Series: ${book.series}, Vol. ${book.volume}, (${book.language})`;
         bookSeries.classList.add('book-series');
 
-        bookVolume.textContent = `Vol. ${book.volume}`;
-        bookVolume.classList.add('book-volume');
+        // bookVolume.textContent = `Vol. ${book.volume}`;
+        // bookVolume.classList.add('book-volume');
 
         bookAuthor.textContent = `Author: ${book.author}`;
         bookAuthor.classList.add('book-author');
@@ -54,15 +57,15 @@ function makeTable(jsondata) {
 
         // APPEND ITEMS TO CARD
         card.appendChild(bookTitle);
-        card.appendChild(bookSeries);
-        card.appendChild(bookVolume);
-        card.appendChild(bookAuthor);
-        // card.appendChild(bookGenre);
-        // card.appendChild(bookBlurb);
-        // card.appendChild(bookLanguage);
-        // card.appendChild(bookFormat);
+        
+        details.appendChild(bookSeries);
+        details.appendChild(bookAuthor);
+
+        card.appendChild(details);
 
         card.appendChild(checkbox);
+
+        
 
         // APPEND CARD TO HTML OBJECT
         bookList.appendChild(card);

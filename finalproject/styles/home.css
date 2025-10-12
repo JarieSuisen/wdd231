@@ -1,7 +1,26 @@
 #preview {
+    padding: 0.5rem;
     /* background: orange; */
 
     border: solid 1px black;
+
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+
+    div {
+        margin: 5px;
+    }
+
+    img {
+        background: rgb(110, 210, 250);
+        border: 1px;
+        border-radius: 50px;
+        width: 3rem;
+        height: 3rem;
+    }
 
 }
 
