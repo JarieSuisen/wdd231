@@ -28,7 +28,7 @@ const desc = memberInfo.get('description');
 const time = memberInfo.get('timestamp');
 
 // ???
-document.querySelector('#data').innerHTML = `
+document.querySelector('#checkout').innerHTML = `
 First Name: ${first}<br>
 Last Name: ${last}<br>
 <!-- Title: ${title}<br> -->
