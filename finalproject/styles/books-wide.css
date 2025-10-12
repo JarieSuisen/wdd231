@@ -1,7 +1,46 @@
 @media only screen and (min-width: 38rem) {
 
+    .book-card {
+        flex-wrap: nowrap;
+
+        display: grid;
+        grid-template-columns: 4fr 9fr 1fr;
+
+        align-items: center;
+
+        p {
+            /* padding: none; */
+        }
 
 
+
+
+        .book-title {
+            width: auto;
+            text-align: left;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .book-series,
+        .book-author {
+            margin: 0.4rem 0;
+            text-align: left;
+            /* justify-self: center; */
+        }
+
+        .checkbox {
+            /* width: 1rem; */
+            width: 2rem;
+            height: 2rem;
+            justify-self: center;
+            /* size: 3rem */
+
+        }
+    }
 
     /*  */
 }

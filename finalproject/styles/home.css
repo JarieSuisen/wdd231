@@ -15,7 +15,8 @@
     }
 
     img {
-        background: rgb(110, 210, 250);
+        /* background: rgb(110, 210, 250); */
+        background-color: lightgray;
         border: 1px;
         border-radius: 50px;
         width: 3rem;

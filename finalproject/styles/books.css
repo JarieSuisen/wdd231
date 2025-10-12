@@ -52,7 +52,10 @@
     }
 
     .checkbox {
-        width: 10%;
+        /* width: 10%; */
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
         /* grid-area: checkbox; */
         /* margin-left: auto; */
         /* align-self: right; */
@@ -79,6 +82,12 @@
     display: flex;
     flex-wrap: wrap;
 
+}
+
+#checkout>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .form-category {

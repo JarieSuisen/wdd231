@@ -33,7 +33,7 @@ function makeTable(jsondata) {
         checkbox.type = ('checkbox');
         // checkbox.id = (`book-${bookTitle}`);
         checkbox.name = ('book-select');
-        checkbox.value = (`book-${bookTitle}`);
+        checkbox.value = book.title;
 
 
         bookTitle.textContent = `${book.title}`;
@@ -57,7 +57,7 @@ function makeTable(jsondata) {
 
         // APPEND ITEMS TO CARD
         card.appendChild(bookTitle);
-        
+
         details.appendChild(bookSeries);
         details.appendChild(bookAuthor);
 
@@ -65,7 +65,7 @@ function makeTable(jsondata) {
 
         card.appendChild(checkbox);
 
-        
+
 
         // APPEND CARD TO HTML OBJECT
         bookList.appendChild(card);
