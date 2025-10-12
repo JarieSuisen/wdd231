@@ -28,6 +28,9 @@
     <link type="text/css" rel="stylesheet" href="styles/small.css">
     <link type="text/css" rel="stylesheet" href="styles/large.css">
 
+    <link type="text/css" rel="stylesheet" href="styles/books.css">
+    <link type="text/css" rel="stylesheet" href="styles/books-wide.css">
+
     <!-- JAVASCRIPT -->
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/dates.js" defer></script>
@@ -73,19 +76,23 @@
         <h1>Book Listing</h1>
 
         <div class="textbox">
-            Use the filters to search for books. While the filters are empty, the list will be empty as well rather than
-            overfill your screen with the entire catalog.
+            To reserve books to pick up: Select the books you would like, then fill out the form below.
+            <br>
+            Selections are held for up to three days. If you fail to pick them up by then your reservation will be
+            canceled and
+            someone else may check them out.
         </div>
 
+        <form method="GET" action="checkout-confirmation.html" id="reserve-form">
 
-        <div id="filterlist">
-            <!-- GENERATE A LIST OF ALL THE BOOKS, WHICH HAS A FILTER BEFORE IT -->
-            <!-- FILTER OPTIONS: Title, Author, Genre?, Format?
+            <div id="filterlist">
+                <!-- GENERATE A LIST OF ALL THE BOOKS, WHICH HAS A FILTER BEFORE IT -->
+                <!-- FILTER OPTIONS: Title, Author, Genre?, Format?
          IF NOTHING IS AVAILABLE, Returns: "Sorry, there are no books currently available with the given filters." -->
-            SECTION ONE: FILTERLIST (THIS IS A PLACEHOLDER)
-        </div>
 
-        <div id="checkout">
+            </div>
+
+
             <!-- THEN, you can "reserve" one or more books, selected from the filtered list.
             Requires:
                 At least one book selected
@@ -104,7 +111,67 @@
                 Thank you <username>, your books are now reserved. Please come pick them up by <3 days from now>. The books you have reserved are:
                     <book list>
             -->
-            SECTION TWO: CHECKOUT (THIS IS A PLACEHOLDER)
+            <h2>Reservation Information</h2>
+
+
+            <!-- 
+<form method="GET" action="thankyou.html" id="join-form"> -->
+            <div id="checkout">
+                <label class="form-category">
+                    First Name*
+                    <input type="text" required name="first" title="Your First Name" autocomplete="given-name">
+                </label>
+                <label class="form-category">
+                    Last Name*
+                    <input type="text" required name="last" title="Your Last Name" autocomplete="family-name">
+                </label>
+                <label class="form-category">
+                    Email Address
+                    <input type="email" name="email" title="Email Address" autocomplete="email"
+                        placeholder="emailaddress@example.com">
+                </label>
+                <label class="form-category">
+                    Mobile Phone Number
+                    <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel"
+                        placeholder="(XXX)XXX-XXXX">
+                    <!-- MAY REQUIRE A DIFFERENT AUTO-COMPLETE??? -->
+                </label>
+
+                <label class="form-category">
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </label>
+
+                <div>
+                    <input type="submit" value="Reserve My Selected Books" class="reserve-button">
+                </div>
+
+            </div>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
 

@@ -1,20 +1,22 @@
 import makeTable from './books-listing.mjs';
 // import { ??? } from './???.mjs';
 import { parseJson } from './books-json.mjs';
-import { checkout } from './books-checkout.mjs';
+// import { checkout } from './books-checkout.mjs';
 
 const bookJson = './data/books.json';
 
-const bookList = document.querySelector('#filterlist');
+// const bookList = document.querySelector('#filterlist');
 
-const checkoutBox = document.querySelector('#checkout');
+// const checkoutBox = document.querySelector('#checkout');
 
-// parseJson(bookJson);
+const bookData = await parseJson(bookJson);
+// console.table(bookData);
 
-makeTable(parseJson(bookJson));
-// makeTable();
 
-checkout();
+// makeTable(parseJson(bookJson));
+makeTable(bookData);
+
+// checkout();
 
 
 // OPERATIONAL CODE HERE

@@ -1,0 +1,85 @@
+#reserve-form {
+    /* display: flex; */
+    margin: 10px;
+}
+
+#filterlist {
+    padding: 5px;
+}
+
+.book-card {
+    padding: 5px;
+    /* background: orange; */
+    display: flex;
+    /* grid-template-columns: auto auto auto auto auto auto auto auto; */
+
+
+
+    border: 1px solid black;
+
+    .book-title {
+        width: 100%;
+        /* margin: 0 auto; */
+        /* margin: 0 auto; */
+        /* grid-area: title; */
+    }
+
+    .book-series {
+        /* grid-area: series; */
+    }
+
+    .book-volume {
+        /* grid-area: volume; */
+    }
+
+    .book-author {
+        /* grid-area: author; */
+    }
+
+    .checkbox {
+        /* grid-area: checkbox; */
+
+    }
+
+    p {
+        padding: 0px 10px 0px 10px;
+        /* display: block; */
+    }
+
+
+
+
+
+}
+
+
+
+#checkout {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.form-category {
+    padding: 0.5rem;
+    /* padding-left: 15px; */
+
+    width: 80%;
+    /* display: flex; */
+
+}
+
+.form-category input {
+    width: 100%;
+    height: 2rem;
+
+}
+
+.reserve-button {
+    height: 3rem;
+
+
+
+    /* margin: 0 auto; */
+
+}

@@ -51,34 +51,34 @@
             "format": "Manga, Paperback"
         },
         {
-            "title": "",
-            "series": "",
-            "volume": "",
-            "author": "",
-            "genre": "",
+            "title": "Magic Kingdom for Sale—Sold!",
+            "series": "Magic Kingdom of Landover",
+            "volume": "1",
+            "author": "Terry Brooks",
+            "genre": "Fantasy",
             "blurb": "",
-            "language": "",
-            "format": ""
+            "language": "English",
+            "format": "Novel, Paperback"
         },
         {
-            "title": "",
-            "series": "",
-            "volume": "",
-            "author": "",
-            "genre": "",
+            "title": "Naruto Vol. 1",
+            "series": "Naruto",
+            "volume": "1",
+            "author": "Masashi Kishimoto",
+            "genre": "Fantasy, Adventure, Comedy, Martial Arts",
             "blurb": "",
-            "language": "",
-            "format": ""
+            "language": "Japanese",
+            "format": "Manga, Paperback"
         },
         {
-            "title": "",
-            "series": "",
-            "volume": "",
-            "author": "",
-            "genre": "",
+            "title": "Homecoming",
+            "series": "Star Trek: Voyager",
+            "volume": "1 (post-Endgame)",
+            "author": "Christie Golden",
+            "genre": "Science-Fiction",
             "blurb": "",
-            "language": "",
-            "format": ""
+            "language": "English",
+            "format": "Novel, Paperback"
         }
     ]
 }
