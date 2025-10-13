@@ -3,7 +3,7 @@
 }
 
 :root {
-    /* +++++ LIGHT MODE COLOR SCHEME +++++ */
+    /* +++++ COLOR SCHEME +++++ */
     --color1: ;
     --color2: ;
     --color3: ;
@@ -11,23 +11,14 @@
     --white: #ffffff;
 
     --gray: #bbbbbb;
-    /* +++++ END LIGHT MODE COLOR SCHEME +++++ */
 
-    /* === NOTE: DARK MODE COLOR SCHEME IS AT VERY END OF DOCUMENT === */
+
 }
-
-
-
-
 
 body {
     font-family: "Noto Sans JP", sans-serif;
-
     color: var(--black);
     background-color: var(--white);
-
-
-
 }
 
 h1,
@@ -53,7 +44,6 @@ div {
     border: 1px solid var(--black);
     border-radius: 5px;
     padding: 10px;
-
 }
 
 img {

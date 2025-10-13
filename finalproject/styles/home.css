@@ -1,21 +1,17 @@
 #preview {
     padding: 0.5rem;
     /* background: orange; */
-
     border: solid 1px black;
-
 }
 
 .weather {
     display: flex;
     align-items: center;
-
 }
 
 .weather div {
     margin: 5px;
 }
-
 
 .weather img {
     /* background: rgb(110, 210, 250); */
@@ -25,10 +21,6 @@
     width: 3rem;
     height: 3rem;
 }
-
-
-
-
 
 .event-card {
     border: solid 1px black;

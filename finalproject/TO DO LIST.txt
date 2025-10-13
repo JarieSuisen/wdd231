@@ -21,7 +21,13 @@ Video content: BOTH Face-camera and Screen-capture
 
 Video Content Requirements:
 -How you used your API/Data integration and demonstrate the output.
+    Weather (API) (On Index)
+    Books.json (On Books)
+    events.json (On Index and Events)
+
 -How you used an asynchronous functionality with a try block.
+    books-user.mjs
+    also in weather-api.js
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++

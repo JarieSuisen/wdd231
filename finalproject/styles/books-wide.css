@@ -2,18 +2,13 @@
 
     .book-card {
         flex-wrap: nowrap;
-
         display: grid;
         grid-template-columns: 4fr 9fr 1fr;
-
         align-items: center;
 
         p {
             /* padding: none; */
         }
-
-
-
 
         .book-title {
             width: auto;
@@ -38,9 +33,6 @@
             height: 2rem;
             justify-self: center;
             /* size: 3rem */
-
         }
     }
-
-    /*  */
 }

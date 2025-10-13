@@ -21,7 +21,6 @@
         padding: 0px;
         /* NOT SURE ABOUT THIS */
         /* align-items: normal; */
-
         /* background-color: yellow; */
     }
 
@@ -35,7 +34,6 @@
         /* width: 50000rem; */
         /* display: block; */
         /* flex-wrap: nowrap; */
-
         /* background-color: blue; */
     }
 
@@ -53,20 +51,15 @@
         /* margin-right:auto; */
         /* place-self: right; */
         font-size: 1.5rem;
-
         position: inherit;
-        top:auto;
+        top: auto;
         right: auto;
-        z-index:inherit;
-
-
+        z-index: inherit;
         /* background-color: orange; */
-
     }
 
     .navigation ul {
         display: flex;
-
     }
 
     .navigation a {
@@ -90,7 +83,6 @@
     }
 
     h1 {
-
         /* margin-top: -200px; */
         /* background-color: gray; */
     }
@@ -104,7 +96,6 @@
 
     .footercontent {
         display: flex;
-        
         /* justify-content: right; */
     }
 
@@ -118,28 +109,5 @@
 
     #videolink {
         padding-top: 5px;
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

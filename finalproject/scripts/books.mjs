@@ -8,13 +8,9 @@ import { readuser } from './books-user.mjs';
 const bookJson = './data/books.json';
 
 // const bookList = document.querySelector('#filterlist');
-
 // const checkoutBox = document.querySelector('#checkout');
-
 const bookData = await parseJson(bookJson);
 // console.table(bookData);
-
-
 // makeTable(parseJson(bookJson));
 makeTable(bookData);
 
@@ -22,9 +18,7 @@ makeTable(bookData);
 
 timestamp();
 
-
 readuser();
-
 
 const form = document.querySelector('#reserve-form')
 form.addEventListener('submit', (e) => {
@@ -36,10 +30,4 @@ form.addEventListener('submit', (e) => {
 
     storeuser(userFirst, userLast);
 
-
 });
-
-
-
-
-// OPERATIONAL CODE HERE

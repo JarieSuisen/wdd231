@@ -3,27 +3,19 @@
 }
 
 :root {
-    /* +++++ LIGHT MODE COLOR SCHEME +++++ */
+    /* +++++ COLOR SCHEME +++++ */
     --color1: ;
     --color2: ;
     --color3: ;
     --black: #000000;
     --white: #ffffff;
-
     --gray: #bbbbbb;
-    /* +++++ END LIGHT MODE COLOR SCHEME +++++ */
-
-    /* === NOTE: DARK MODE COLOR SCHEME IS AT VERY END OF DOCUMENT === */
 }
 
 body {
     font-family: "Noto Sans JP", sans-serif;
-
     color: var(--black);
     background-color: var(--white);
-
-
-
 }
 
 /* HAMBURGER & NAVIGATION MENU */
@@ -58,26 +50,19 @@ header {
 .navigation {
     display: none;
     text-align: center;
-
     width: 70%;
-
     /* margin-left: 50%; */
-
     position: absolute;
     top: 4rem;
     right: 0;
     background-color: var(--white);
     z-index: 1000;
-
-
-
 }
 
 .navigation.show {
     /* I WANT to have the navigation overlap the Hero Image, rather than displace it */
     display: block;
     /* margin-top: 1rem; */
-
 }
 
 .navigation ul {
@@ -90,7 +75,6 @@ header {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-
     text-decoration: none;
     border: solid 1px var(--gray);
     align-items: center;
@@ -139,10 +123,8 @@ header span {
 .hero img {
     /* display: flex; */
     width: 100%;
-
     justify-self: center;
     align-self: center;
-
     object-fit: cover;
 }
 
@@ -188,7 +170,6 @@ footer {
     padding: 5px;
     /* align-content: center; */
     justify-content: center;
-
 }
 
 .socials a {
@@ -200,7 +181,6 @@ footer {
     margin: 5px;
     justify-content: center;
     /* margin: 0 auto; */
-
     border: 1px solid black;
     border-radius: 50px;
     /* background-color: orange; */
@@ -211,12 +191,7 @@ footer {
     width: 32px;
     height: 32px;
     align-self: center;
-
     padding: 5px;
-
-
-
-
 }
 
 #videolink {

@@ -35,7 +35,6 @@ function makeTable(jsondata) {
         checkbox.name = ('book-select');
         checkbox.value = book.title;
 
-
         bookTitle.textContent = `${book.title}`;
         bookTitle.style.fontWeight = 'bold';
         bookTitle.classList.add('book-title');
@@ -54,7 +53,6 @@ function makeTable(jsondata) {
         // bookLanguage.textContent = `Language: ${book.language}`;
         // bookFormat.textContent = `Format: ${book.format}`;
 
-
         // APPEND ITEMS TO CARD
         card.appendChild(bookTitle);
 
@@ -65,16 +63,10 @@ function makeTable(jsondata) {
 
         card.appendChild(checkbox);
 
-
-
         // APPEND CARD TO HTML OBJECT
         bookList.appendChild(card);
 
     });
-
-
-
 }
-
 
 export default makeTable;

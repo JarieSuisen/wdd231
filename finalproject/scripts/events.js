@@ -28,9 +28,6 @@ function displayEvents(eventsList) {
 
     // console.table(eventsList);
 
-
-
-
     eventsList.forEach(event => {
 
         // console.table(event);
@@ -47,7 +44,6 @@ function displayEvents(eventsList) {
         const button = document.createElement('button');
         button.classList.add('modal-btn');
 
-
         const name = event['name'];
         // console.log(name);
         const date = event['date'];
@@ -59,7 +55,6 @@ function displayEvents(eventsList) {
         // const summary = event['summary'];
         // console.log(summary);
 
-
         eventName.textContent = `${name}`;
         eventDate.textContent = `Date: ${date}`;
         eventTime.textContent = `Time: ${time}`;
@@ -68,29 +63,19 @@ function displayEvents(eventsList) {
 
         button.textContent = `Full Details`;
 
-
         // ADD EVENT LISTENER
         button.addEventListener('click', () => {
             displayEventDetails(event);
         });
-
-
 
         card.appendChild(eventName);
         card.appendChild(eventDate);
         card.appendChild(eventTime);
         // card.appendChild(eventHost);
         // card.appendChild(eventSummary);
-
         card.appendChild(button);
-
         eventBox.appendChild(card);
-
-
     });
-
-
-
 };
 
 
@@ -107,7 +92,6 @@ function displayEventDetails(event) {
         </div>
     `;
     modal.showModal();
-
     // const closeModal = document.querySelector('#closeModal');
     closeModal.addEventListener("click", () => {
         modal.close();
