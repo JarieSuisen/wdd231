@@ -38,7 +38,7 @@ function displayEvents(eventsList) {
         const card = document.createElement('section');
         card.classList.add('event-card');
 
-        const eventName = document.createElement('h3');
+        const eventName = document.createElement('h2');
         const eventDate = document.createElement('p');
         const eventTime = document.createElement('p');
         const eventHost = document.createElement('p');
