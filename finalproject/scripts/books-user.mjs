@@ -14,8 +14,8 @@ function readuser() {
         const userFirst = localStorage.getItem('username-first');
         const userLast = localStorage.getItem('username-last');
 
-        console.log('First Name:', userFirst);
-        console.log('Last Name:', userLast);
+        // console.log('First Name:', userFirst);
+        // console.log('Last Name:', userLast);
 
         const firstName = document.querySelector('input[name="first"]');
         const lastName = document.querySelector('input[name="last"]');
@@ -39,7 +39,7 @@ function readuser() {
     }
 
     catch {
-        console.log('NOTHING FOUND')
+        // console.log('NOTHING FOUND')
         return { userFirst: null, userLast: null };
     }
 
@@ -55,7 +55,7 @@ function storeuser(first, last) {
     localStorage.setItem('username-first', first);
     localStorage.setItem('username-last', last);
 
-    console.log(`User data stored: First: ${first} Last: ${last}`)
+    // console.log(`User data stored: First: ${first} Last: ${last}`)
 
 
 

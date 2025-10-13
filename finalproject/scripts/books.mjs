@@ -29,10 +29,10 @@ readuser();
 const form = document.querySelector('#reserve-form')
 form.addEventListener('submit', (e) => {
     const userFirst = document.querySelector('input[name="first"]').value;
-    console.log(userFirst);
+    // console.log(userFirst);
 
     const userLast = document.querySelector('input[name="last"]').value;
-    console.log(userLast);
+    // console.log(userLast);
 
     storeuser(userFirst, userLast);
 

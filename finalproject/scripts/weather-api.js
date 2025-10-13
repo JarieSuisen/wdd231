@@ -43,9 +43,9 @@ async function apiFetch() {
         }
     }
     catch (error) {
-        console.error(error);
-        console.text('AN ERROR HAS OCCURED, DUMMY. - VIA CONSOLE.TEXT');
-        console.log('AN ERROR HAS OCCURED, DUMMY. - VIA CONSOLE.LOG');
+        // console.error(error);
+        // console.text('AN ERROR HAS OCCURED, DUMMY. - VIA CONSOLE.TEXT');
+        // console.log('AN ERROR HAS OCCURED, DUMMY. - VIA CONSOLE.LOG');
     };
 
 

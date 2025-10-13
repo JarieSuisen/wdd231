@@ -14,7 +14,7 @@ async function parseJson(json) {
         return data['books'];
     }
     else {
-        console.log('ERROR IN books-json.mjs')
+        // console.log('ERROR IN books-json.mjs')
     }
 };
 
