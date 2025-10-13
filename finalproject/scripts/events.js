@@ -10,16 +10,21 @@ getEventInfo();
 
 async function getEventInfo() {
 
-    // eventbox.innerHTML = '';
+    try {
+        // eventbox.innerHTML = '';
 
-    const response = await fetch(eventSource);
-    const data = await response.json();
+        const response = await fetch(eventSource);
+        const data = await response.json();
 
-    // console.table(data['events']);
+        // console.table(data['events']);
 
-    displayEvents(data['events']);
+        displayEvents(data['events']);
 
-    // return data['events'];
+        // return data['events'];
+    }
+    catch (error) {
+        // console.log('FAILURE TO READ EVENT JSON');
+    };
 };
 
 // getEventInfo();

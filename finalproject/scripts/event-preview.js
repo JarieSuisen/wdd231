@@ -8,12 +8,17 @@ getEventInfo();
 
 async function getEventInfo() {
 
-    const response = await fetch(eventSource);
-    const data = await response.json();
+    try {
+        const response = await fetch(eventSource);
+        const data = await response.json();
 
-    // console.table(data['events']);
-    displayEvents(data['events']);
-    // return data['events'];
+        // console.table(data['events']);
+        displayEvents(data['events']);
+        // return data['events'];
+    }
+    catch (error) {
+        console.log('FAILED TO LOAD EVENT JSON DATA FOR INDEX PAGE');
+    };
 };
 
 // getEventInfo();

@@ -1,17 +1,3 @@
-MISSING ITEMS:
-
-
-NEED A TRANSITION/ANIMATION
-
-
-IMAGE(S) WITH LAZY LOADING
-
-
-
-
-
-
------------------------
 
 VIDEO
 
@@ -29,6 +15,43 @@ Video Content Requirements:
     books-user.mjs
     also in weather-api.js
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MISSING ITEMS:
+
+
+NEED A TRANSITION/ANIMATION
+
+
+IMAGE(S) WITH LAZY LOADING
+
+
+
+
+
+
+-----------------------
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 DONE
