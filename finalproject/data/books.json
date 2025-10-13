@@ -79,6 +79,76 @@
             "blurb": "",
             "language": "English",
             "format": "Novel, Paperback"
+        },
+        {
+            "title": "The Indian in the Cupboard",
+            "series": "The Indian in the Cupboard",
+            "volume": "1",
+            "author": "Lynne Reid Banks",
+            "genre": "Fantasy, Personal Growth",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Charlie and the Chocolate Factory",
+            "series": "Charlie and the Chocolate Factory",
+            "volume": "1",
+            "author": "Roald Dahl",
+            "genre": "Fantasy",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Charlie and the Great Glass Elevator",
+            "series": "Charlie and the Chocolate Factory",
+            "volume": "2",
+            "author": "Roald Dahl",
+            "genre": "Fantasy",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Waking in Dreamland",
+            "series": "Dreamland",
+            "volume": "1",
+            "author": "Jody Lynn Nye",
+            "genre": "Fantasy",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Paperback"
+        },
+        {
+            "title": "Welcome to Night Vale",
+            "series": "Night Vale Books",
+            "volume": "1",
+            "author": "Joseph Fink and Jeffrey Cranor",
+            "genre": "Supernatural, Mystery, Surreal Comedy, Absurdism, Horror",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Hardback"
+        },
+        {
+            "title": "Don Sturdy in the Temples of Fear",
+            "series": "Don Sturdy",
+            "volume": "12",
+            "author": "Victor Appleton (pseudonym, actual author unknown)",
+            "genre": "Adventure",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Hardback"
+        },
+        {
+            "title": "The Wonderful Wizard of Oz",
+            "series": "Oz",
+            "volume": "1",
+            "author": "L. Frank Baum",
+            "genre": "Fantasy, Adventure",
+            "blurb": "",
+            "language": "English",
+            "format": "Novel, Hardback"
         }
     ]
 }

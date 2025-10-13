@@ -1,6 +1,5 @@
 {
     "events": [
-        
         {
             "name": "Introducing You To Your Family History",
             "date": "Oct. 20, 2025",
@@ -13,7 +12,7 @@
             "date": "Oct. 22",
             "time": "12:30pm-3:30pm",
             "host": "Nobunaga Oda",
-            "summary": "A course studying the methods of past practitioners."
+            "summary": "A course studying the combat methods of past practitioners."
         },
         {
             "name": "Pizza Party",
@@ -25,7 +24,7 @@
         {
             "name": "Murder Mystery",
             "date": "Oct. 31",
-            "time": "7:30pm",
+            "time": "7:30pm-9:30pm (arrest and dinner to follow)",
             "host": "Mr. Body",
             "summary": "I know who you are, and where and how you will do it. It will be murder... by death!"
         },
@@ -35,6 +34,76 @@
             "time": "6pm-8pm",
             "host": "B★RS",
             "summary": "Working together to increase skills in music and supporting each other as we build ourselves up."
+        },
+        {
+            "name": "Book Safety, lesson 3: Titles to Avoid",
+            "date": "November 12th, 2025",
+            "time": "3:00 pm",
+            "host": "Jarie Suisen",
+            "summary": "Learn to recognize some of the books that are best avoided by their title alone. True, you should generally not judge a book by its cover alone, but it can give you a good starting point. Take this for example, which literally cost the last reader their sanity to read the first chapter: 'An Inexhaustively Comprehensive Guide on the Topic of Why I Shouldn't Have Written This Book, Vol. 7, 158th edition reprint'. Seriously, please be safe and don't read such harmful material."
+        },
+        {
+            "name": "Children Community Reading",
+            "date": "Each Thursday",
+            "time": "12:00pm-1:00pm",
+            "host": "Kasumi and Aoi Hyuuga",
+            "summary": "Let your young ones enjoy relaxing together for an hour each week. A lovely book and good friends are always something to treasure."
+        },
+        {
+            "name": "A New Beginning",
+            "date": "The first Monday after your 10th birthday (if you are late, even if years late, you won't get first pick)",
+            "time": "10:00am-10:30am",
+            "host": "Hakase Oak",
+            "summary": "Choose your partner for a grand adventure! "
+        },
+        {
+            "name": "Second Breakfast",
+            "date": "Every day",
+            "time": "About an hour after breakfast",
+            "host": "The Heroes Brandybuck and Took",
+            "summary": "Actually, it's going to be at the park nearby. Be sure to bring some to share! Being heroes isn't as well-paying as one would hope."
+        },
+        {
+            "name": "The End of Time",
+            "date": "Tomorrow",
+            "time": "Exactly 5 minutes and 32 seconds before you clock out from work",
+            "host": "The Nexus",
+            "summary": "Honestly, just listen to the podcast: 'The End of Time, and Other Bothers', it is so good!"
+        },
+        {
+            "name": "Megapode Hunt",
+            "date": "October 31, 2025",
+            "time": "25:00",
+            "host": "Wizard of the Unseen University",
+            "summary": "Ho! The Megapode!"
+        },
+        {
+            "name": "Babblefish babbling in my ear and why you want one too",
+            "date": "October 23, 2025",
+            "time": "Noon or five minutes after tea, whichever comes last",
+            "host": "Arthur Dent",
+            "summary": "A short course that will be most enlightening. Bring your towel, or at least know where it is."
+        },
+        {
+            "name": "Sleighbell Craft Night",
+            "date": "December 1st",
+            "time": "6:00pm",
+            "host": "'Elves' of the 'North Pole'",
+            "summary": "We just need some help with our project. Nothing unusual here, children."
+        },
+        {
+            "name": "Hot Air Balloon Safety and Guidelines",
+            "date": "Nov. 10, 2025",
+            "time": "2:00pm",
+            "host": "Oscar Zoroaster Phadrig Isaac Norman Henkle Emmannuel Ambroise Diggs",
+            "summary": "Learn from an experienced balloonist that ended up stranded in a magical land for many years, due to not being as careful with his flight plans as he might have been."
+        },
+        {
+            "name": "The Litster Sibling Bash!",
+            "date": "February 17, 2027",
+            "time": "22:35-04:30",
+            "host": "The Litster Siblings",
+            "summary": "Sadly, it is a mystery because only the Litster Siblings are invited. But if you can best me in a Smash Bros. Showdown, you can win a pass."
         }
     ]
 }
