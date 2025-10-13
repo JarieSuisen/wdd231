@@ -69,10 +69,11 @@ async function displayResults() {
 
     const iconsrc = `https://openweathermap.org/img/wn/${icon}.png`;
     // console.log(iconsrc); // console print of the icon's weblink
-    
+
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', 'an icon representing the weather');
-    
+    weatherIcon.setAttribute('loading', 'lazy');
+
 };
 
 displayResults();

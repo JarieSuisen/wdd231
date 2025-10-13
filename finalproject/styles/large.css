@@ -54,6 +54,11 @@
         /* place-self: right; */
         font-size: 1.5rem;
 
+        position: inherit;
+        top:auto;
+        right: auto;
+        z-index:inherit;
+
 
         /* background-color: orange; */
 

@@ -2,13 +2,15 @@ MISSING ITEMS:
 
 LOCAL STORAGE NEEDS USED
 
-NEED 15+ ITEMS IN a JSON
-
 NEED A TRANSITION/ANIMATION
 
-NEED A TRY/CATCH BLOCK(S)
 
-IMAGE(S) WITH LAZY LOADING
+
+    NEED A TRY/CATCH BLOCK(S) - DONE: WEATHER API
+
+
+
+    IMAGE(S) WITH LAZY LOADING - KINDA done... with weather icon
 
 
 -----------------------
@@ -22,5 +24,13 @@ Video content: BOTH Face-camera and Screen-capture
 Video Content Requirements:
 -How you used your API/Data integration and demonstrate the output.
 -How you used an asynchronous functionality with a try block.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+DONE
+
+
+NEED 15+ ITEMS IN a JSON
+
 
 
