@@ -3,11 +3,11 @@ MISSING ITEMS:
 
 NEED A TRANSITION/ANIMATION
 
+IMAGE(S) WITH LAZY LOADING
 
 
 
 
-    IMAGE(S) WITH LAZY LOADING - KINDA done... with weather icon
 
 
 -----------------------
