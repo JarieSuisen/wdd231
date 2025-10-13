@@ -1,0 +1,26 @@
+MISSING ITEMS:
+
+LOCAL STORAGE NEEDS USED
+
+NEED 15+ ITEMS IN a JSON
+
+NEED A TRANSITION/ANIMATION
+
+NEED A TRY/CATCH BLOCK(S)
+
+IMAGE(S) WITH LAZY LOADING
+
+
+-----------------------
+
+VIDEO
+
+3-5 minutes long
+
+Video content: BOTH Face-camera and Screen-capture
+
+Video Content Requirements:
+-How you used your API/Data integration and demonstrate the output.
+-How you used an asynchronous functionality with a try block.
+
+
