@@ -1,8 +1,8 @@
 const video = document.querySelector("#videolink");
 
-const url = "https://www.youtube.com/shorts/XRoHhQyu9SY";
-const words = `HELLO, THIS WILL LINK TO THE VIDEO I NEED TO UPLOAD. DO NOT FORGET, UPDATE THIS AND THE LINK. GO TO "videolink.js" TO UPDATE IT.
-ALSO UPDATE IT ON EVERY PAGE, including the Checkout Confirmation page!`;
+// const url = "https://www.youtube.com/shorts/XRoHhQyu9SY";
+const url = "https://youtu.be/w0yfoL3pZDY";
+const words = `Jacob Litster's Final Project Video`;
 
 video.setAttribute('href', url);
 video.textContent = words;
